@@ -11,9 +11,9 @@
 
 <body>
     <header id="go-top">
-        <img class="logo" src="img/logo.JPG" alt="logo WeCode">
+        <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
         <div>
-            <form action="" target="_blanc">
+            <form action="#">
                 <label>Encuentra lo que estas buscando</label>
                 <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso">
                 <input type="submit" value="Buscar">
@@ -27,7 +27,16 @@
                 <option value=".Net"></option>
             </datalist>
         </div>
-        <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
+        <div>
+            <div>
+                <a href="#">
+                    <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
+                </a>
+                <span>
+                    <input type="number" name="quantity" value="3">
+                </span>
+            </div>
+        </div>
     </header>
     <nav>
         <ul>
@@ -39,7 +48,8 @@
     <main>
         <section>
             <!-- SLIDER: curso mas popular / imagen que invite a anotarse / Estas empresas buscan sus empleados aquí: logos de empresas-->
-            <img src="img/slider-work-from-anywhere.jpg" alt="coding on the wild">
+            <img class="logo" src="img/slider-work-from-anywhere.jpg" alt="coding on the wild">
+            <p>Trabajar en programacion nos permite ser mas libres</p>
         </section>
         <section>
             <h2>¿Como empiezo?</h2>
@@ -116,8 +126,15 @@
                 <li>Garcia Suarez Julian - DNI: 41.428.826 </li>
             </ul>
         </div>
-        <h4>Siguenos...</h4>
         <div>
+            <h4>Oficinas</h4>
+            <span>Ciudad de Buenos Aires</span>
+            <span>Posadas</span>
+            <span>Mar del Plata</span>
+            <span>Bariloche</span>
+        </div>
+        <div>
+            <h4>Siguenos...</h4>
             <div><a class="contacto" href="https://es-la.facebook.com/UnlamOficial/" target="blank"><img
                         src="img/redes-facebook.png"></a>
             </div>
