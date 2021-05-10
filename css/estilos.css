@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background-image: url(../img/fondos/grunge_wall.png);
+}
+
+.footer-container {
+  background-color: rgb(88, 85, 85);
+  padding: 50px;
+  display: flex;
+}
+
+.footer-container article {
+}
+
 .logo {
   width: 200px;
   border-radius: 70px 10px 70px 10px;
