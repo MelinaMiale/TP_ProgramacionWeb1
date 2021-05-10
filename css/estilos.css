@@ -8,20 +8,76 @@ body {
   background-image: url(../img/fondos/grunge_wall.png);
 }
 
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .footer-container {
   background-color: rgb(88, 85, 85);
   padding: 50px;
   display: flex;
+  justify-content: space-between;
+ 
+
 }
 
-.footer-container article {
+.menu-principal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 85, 85);
+  list-style: none;
+  height: 40px;
+}
+
+.menu-principal a{
+  margin: 20px;
+  color: black;
+  text-decoration: none;
+  
+}
+
+.menu-principal a:hover{
+  color: white;
 }
 
 .logo {
-  width: 200px;
+  width: 100px;
   border-radius: 70px 10px 70px 10px;
+  margin: auto;
 }
 
 .contacto img {
   width: 50px;
+  margin: 10px;
 }
+
+#search-bar{
+  width: 80%;
+  height: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#search-container{
+  width: 60%;
+  align-items: center;
+}
+
+.shopping-cart{
+  display: flex;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+}
+

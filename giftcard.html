@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/giftcard.css">
+    <title>WeCODE Giftcard</title>
+</head>
+<body>
+    
+    <header id="go-top" class="header-container">
+        <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
+        <div id="search-container">
+            <datalist id="listado_cursos">
+                <option value="Android"></option>
+                <option value="Python"></option>
+                <option value="Mongo DB"></option>
+                <option value="Diseño Web"></option>
+                <option value="Seguridad Informática"></option>
+                <option value=".Net"></option>
+            </datalist>
+            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso" id="search-bar">
+        </div>
+        <div>
+            <div>
+                <a href="#" class="shopping-cart">
+                    <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
+                </a>
+                <span>
+                    <input type="number" name="quantity" value="3" >
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <nav >
+        <ul class="menu-principal">
+            <li><a href="index.html">Inicio</a> </li>
+            <li><a href="detalle-de-curso.html">Cursos</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="giftcard.html">Giftcard</a></li>
+            <li><a href="inscripcion.html">Incripciones</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main >
+        <section class="section-container">
+            <article class="article-giftcard">
+                <img src="/img/giftcard.jpg" alt="" class="giftcard-img">
+                <br><br>
+                <p>VISTA PREVIA DE TU GIFTCARD</p>
+                <br><br>
+            </article>
+
+            <article class="article-form">
+                <form action="#">
+                    <h1>Personalizacion de Giftcard</h1> <br><br>
+                    <label >Nombre</label>
+
+                    <input type="text" name="nombre-destinatario" placeholder="Nombre Destinatario" id="nombre-destinatario">
+                    <br><br>
+
+                    <label>Color</label> <br>
+                    
+                    <label for="colors"><img class="colors" src="img/blue.png" alt=""></label>
+                    <input type="radio" name="colors" value="blue">
+                    
+                    <label for="colors"> <img class="colors"src="img/red.png" alt=""></label>
+                    <input type="radio" name="colors" value="red">
+                    
+                    <label for="colors"><img class="colors" src="img/green.png" alt=""></label>
+                    <input type="radio" name="colors" value="green">
+                    
+                    <label for="colors"><img class="colors" src="img/yellow.png" alt=""></label>
+                    <input type="radio" name="colors" value="yellow">
+                    
+                    <label for="colors"><img class="colors" src="img/pink.png" alt=""></label>
+                    <input type="radio" name="colors" value="pink">
+                    <br><br>
+
+                    <label >Tamaño de fuente</label>
+
+                    <br>
+                    <label for="font-size" id="px20">20px</label>
+                    <input type="radio" name="font-size" value="20px">
+
+                    <label for="font-size" id="px28">28px</label>
+                    <input type="radio" name="font-size" value="28px">
+
+                    <label for="font-size" id="px32">32px</label>
+                    <input type="radio" name="font-size" value="32px">
+
+                    <label for="font-size" id="px48">48px</label>
+                    <input type="radio" name="font-size" value="48px">
+
+                    <label for="font-size" id="px60">60px</label>
+                    <input type="radio" name="font-size" value="60px">
+                    <br><br>
+
+                    <label for="monto">Monto $</label>
+                    <input type="number" name="monto" value="monto" class="number-monto">
+                    <br><br>
+
+                    <label >Ubicacion</label><br>
+                    
+                    <label for="ubicacion" ><img class="ubicaciones" src="img/arriba-izquierda.png" alt=""></label>
+                    <input type="radio" name="ubicacion" value="arriba-izquierda">
+
+                    <label for="ubicacion" ><img class="ubicaciones" src="img/arriba-derecha.png" alt=""></label>
+                    <input type="radio" name="ubicacion" value="arriba-derecha">
+                    
+                    <label for="ubicacion" ><img class="ubicaciones" src="img/abajo-izquierda.png" alt=""></label>
+                    <input type="radio" name="ubicacion" value="arriba-izquierda">
+
+                    <label for="ubicacion" ><img class="ubicaciones" src="img/abajo-derecha.png" alt=""></label>
+                    <input type="radio" name="ubicacion" value="arriba-derecha"> <br><br>
+
+                    <label >Fondo</label><br>
+
+                    <label for="fondo"><img class="fondos" src="/img/black.jpg" alt=""></label>
+                    <input type="radio" name="fondo" value="black">
+
+                    <label for="fondo"><img class="fondos" src="/img/white.jpeg" alt=""></label>
+                    <input type="radio" name="fondo" value="white">
+
+                    <label for="fondo"><img class="fondos" src="/img/navidad.jpeg" alt=""></label>
+                    <input type="radio" name="fondo" value="navidad">
+
+                    <label for="fondo"><img class="fondos" src="/img/playa.jpeg" alt=""></label>
+                    <input type="radio" name="fondo" value="playa">
+                    <br><br>
+
+                    <input type="submit" value="Confirmar" id="boton-confirmar">
+                    <br>
+                    
+
+                </form>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div>
+            <h4>Desarrollado por:</h4>
+            <ul>
+                <li>Miale Melina Soledad - DNI: 32.760.005</li>
+                <li>Garcia Suarez Julian - DNI: 41.428.826 </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Oficinas</h4>
+            <span>Ciudad de Buenos Aires</span>
+            <span>Posadas</span>
+            <span>Mar del Plata</span>
+            <span>Bariloche</span>
+        </div>
+        <div >
+            <h4>Siguenos en nuestras redes</h4>
+            <div class="redes">
+                <a class="contacto" href="https://es-la.facebook.com/UnlamOficial/" target="blank">
+                    <img src="img/redes-facebook.png">
+                </a>
+
+                <a class="contacto" href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank">
+                    <img src="img/redes-instagram.png">
+                </a>
+            
+                <a class="contacto" href="https://twitter.com/UnlamOficial" target="blank">
+                    <img src="img/redes-tweeter.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

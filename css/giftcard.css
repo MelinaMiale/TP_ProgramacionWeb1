@@ -1,0 +1,79 @@
+.giftcard-img{
+    width: 80%;
+}
+
+.article-giftcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+}
+
+.article-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.colors{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#px20{
+    font-size: 10px;
+}
+
+#px28{
+    font-size: 12px;
+}
+
+#px32{
+    font-size: 14px;
+}
+
+#px48{
+    font-size: 16px;
+}
+
+#px60{
+    font-size: 20px;
+}
+
+.ubicaciones{
+    width: 50px;
+    height: 40px;
+}
+
+.fondos{
+    height: 40px;
+    width: 50px;
+}
+
+#boton-confirmar{
+    background-color: rgb(226, 55, 55);
+    color: black;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+#boton-confirmar:hover{
+    background-color: red;
+}
+
+#nombre-destinatario{
+    width: 95%;
+    height: 30px;
+}

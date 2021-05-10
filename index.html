@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <header id="go-top">
+    <header id="go-top" class="header-container">
         <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
-        <div>
+        <div id="search-container">
             <datalist id="listado_cursos">
                 <option value="Android"></option>
                 <option value="Python"></option>
@@ -21,25 +21,27 @@
                 <option value="Seguridad Informática"></option>
                 <option value=".Net"></option>
             </datalist>
-            <label for="ciudad">Encuentra lo que estas buscando</label>
-            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso">
+            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso" id="search-bar">
         </div>
         <div>
             <div>
-                <a href="#">
+                <a href="#" class="shopping-cart">
                     <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
                 </a>
                 <span>
-                    <input type="number" name="quantity" value="3">
+                    <input type="number" name="quantity" value="3" >
                 </span>
             </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="eventos.html">Proximos eventos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+    <nav >
+        <ul class="menu-principal">
+            <li><a href="index.html">Inicio</a> </li>
+            <li><a href="detalle-de-curso.html">Cursos</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="giftcard.html">Giftcard</a></li>
+            <li><a href="inscripcion.html">Incripciones</a></li>
+            <li><a href="">Contacto</a></li>
         </ul>
     </nav>
     <main>

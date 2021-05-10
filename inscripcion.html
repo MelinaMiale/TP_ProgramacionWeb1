@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/inscripcion.css">
+    <title>Inscribite a todos nuestros cursos!</title>
+</head>
+<body>
+    <header id="go-top" class="header-container">
+        <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
+        <div id="search-container">
+            <datalist id="listado_cursos">
+                <option value="Android"></option>
+                <option value="Python"></option>
+                <option value="Mongo DB"></option>
+                <option value="Diseño Web"></option>
+                <option value="Seguridad Informática"></option>
+                <option value=".Net"></option>
+            </datalist>
+            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso" id="search-bar">
+        </div>
+        <div>
+            <div>
+                <a href="#" class="shopping-cart">
+                    <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
+                </a>
+                <span>
+                    <input type="number" name="quantity" value="3" >
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <nav >
+        <ul class="menu-principal">
+            <li><a href="index.html">Inicio</a> </li>
+            <li><a href="detalle-de-curso.html">Cursos</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="giftcard.html">Giftcard</a></li>
+            <li><a href="inscripcion.html">Incripciones</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Titulo del curso</h1>
+        <h2>inscripcion</h2>
+        <form class="form-container">
+
+            
+            <div class="user-info-container">
+                <input class="datos" type="text" value="Nombre" >
+                <input class="datos" type="text" value="Apellido" >
+                <input class="datos" type="text" value="DNI" >
+                <button class="boton">Borrar</button>
+            </div>
+
+            <div class="user-info-container">
+                <input class="datos" type="text" value="Nombre" >
+                <input class="datos" type="text" value="Apellido" >
+                <input class="datos" type="text" value="DNI" >
+                <button class="boton">Borrar</button>
+            </div>
+
+            <div class="user-info-container">
+                <input class="datos" type="text" value="Nombre">
+                <input class="datos" type="text" value="Apellido" >
+                <input class="datos" type="text" value="DNI" >
+                <button class="boton">Borrar</button>
+            </div>
+
+            <div class="boton-agregar">
+                <button class="boton">Agregar Persona</button><br><br>
+            </div>
+            <div class="boton-inscribirse">    
+                <label id="precio">$999</label> <input class="boton" type="submit" value="Inscribirse">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer-container">
+        <div>
+            <h4>Desarrollado por:</h4>
+            <ul>
+                <li>Miale Melina Soledad - DNI: 32.760.005</li>
+                <li>Garcia Suarez Julian - DNI: 41.428.826 </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Oficinas</h4>
+            <span>Ciudad de Buenos Aires</span>
+            <span>Posadas</span>
+            <span>Mar del Plata</span>
+            <span>Bariloche</span>
+        </div>
+        <div >
+            <h4>Siguenos en nuestras redes</h4>
+            <div class="redes">
+                <a class="contacto" href="https://es-la.facebook.com/UnlamOficial/" target="blank">
+                    <img src="img/redes-facebook.png">
+                </a>
+
+                <a class="contacto" href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank">
+                    <img src="img/redes-instagram.png">
+                </a>
+            
+                <a class="contacto" href="https://twitter.com/UnlamOficial" target="blank">
+                    <img src="img/redes-tweeter.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
