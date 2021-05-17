@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeCODE</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
     <header id="go-top" class="header-container">
         <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
         <div id="search-container">
+            <!-- <form action="">    AGREGAR EL BUSCADOR EN UN FORM COMO TENIA EN EL 1ER COMMIT-->
             <datalist id="listado_cursos">
                 <option value="Android"></option>
                 <option value="Python"></option>
@@ -21,7 +24,10 @@
                 <option value="Seguridad Informática"></option>
                 <option value=".Net"></option>
             </datalist>
-            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso" id="search-bar">
+            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso"
+                id="search-bar">
+            <!-- AGREGAR ICONO CON LUPA PARA BUSCAR EL CURSO -->
+            <!-- </form> -->
         </div>
         <div>
             <div>
@@ -29,52 +35,69 @@
                     <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
                 </a>
                 <span>
-                    <input type="number" name="quantity" value="3" >
+                    <input type="number" name="quantity" value="3">
                 </span>
             </div>
         </div>
     </header>
-    <nav >
+    <nav>
         <ul class="menu-principal">
             <li><a href="index.html">Inicio</a> </li>
             <li><a href="detalle-de-curso.html">Cursos</a></li>
             <li><a href="">Eventos</a></li>
             <li><a href="giftcard.html">Giftcard</a></li>
             <li><a href="inscripcion.html">Incripciones</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <main>
-        <section>
+        <section class="slider-container">
             <!-- SLIDER: curso mas popular / imagen que invite a anotarse / Estas empresas buscan sus empleados aquí: logos de empresas-->
-            <img class="logo" src="img/slider-work-from-anywhere.jpg" alt="coding on the wild">
-            <p>Trabajar en programacion nos permite ser mas libres</p>
+            <div class="slider">
+                <i class="fas fa-chevron-circle-left icono-flecha"></i>
+                <a href="https://www.salesforce.com/news/stories/welcome-to-the-all-digital-work-from-anywhere-world-2/"
+                    target="_blank">
+                    <img src="img/slider-work-from-anywhere.jpg" alt="coding on the wild">
+                </a>
+                <i class="fas fa-chevron-circle-right icono-flecha"></i>
+            </div>
+            <p>Trabajo Remoto</p>
         </section>
-        <section>
+        <section class="pasos-inscripcion">
             <h2>¿Como empiezo?</h2>
-            <article>Elegi el curso</article>
-            <article>Hace clic en "inscribirme"</article>
-            <article>Selecciona el metodo de pago... y Listo!</article>
+            <div class="pasos-container">
+                <article>Elegi el curso</article>
+                <i class="fas fa-hand-point-down"></i>
+                <article>Hace clic en "inscribirme"</article>
+                <i class="fas fa-hand-point-down"></i>
+                <article>Selecciona el metodo de pago... y Listo!</article>
+            </div>
         </section>
-        <section>
-            <h2>CURSOS DESTACADOS</h2>
-            <article>
-                <h3>Android</h3>
-                <span>Duracion: 4 semanas</span>
-                <span>$2000</span>
-                <button type="button"><a href="detalle-de-curso.html">+Info</a></button>
+        <h2 id="cursos-destacados-titulo">CURSOS DESTACADOS</h2>
+        <section class="cursos-destacados">
+            <article class="item1">
+                <h3 class="curso-destacado-item1">Android</h3>
+                <span class="curso-destacado-item2">50hs</span>
+                <span class="curso-destacado-item3">$2000</span>
+                <button class="curso-destacado-item4" type="button"><a href="detalle-de-curso.html">+Info</a></button>
             </article>
-            <article>
-                <h3>CARRERA FULL STACK</h3>
-                <span>Duracion: 2 años</span>
-                <span>$150000</span>
-                <button type="button"><a href="detalle-de-curso.html">+Info</a></button>
+            <article class="item2">
+                <h3 class="curso-destacado-item1">FULL STACK</h3>
+                <span class="curso-destacado-item2">100hs</span>
+                <span class="curso-destacado-item3">$150000</span>
+                <button class="curso-destacado-item4" type="button"><a href="detalle-de-curso.html">+Info</a></button>
             </article>
-            <article>
-                <h3>Diseño Web</h3>
-                <span>Duracion: 10 semanas</span>
-                <span>$10000</span>
-                <button type="button"><a href="detalle-de-curso.html">+Info</a></button>
+            <article class="item3">
+                <h3 class="curso-destacado-item1">Diseño Web</h3>
+                <span class="curso-destacado-item2">15hs</span>
+                <span class="curso-destacado-item3">$10000</span>
+                <button class="curso-destacado-item4" type="button"><a href="detalle-de-curso.html">+Info</a></button>
+            </article>
+            <article class="item4">
+                <h3 class="curso-destacado-item1">Python</h3>
+                <span class="curso-destacado-item2">40hs</span>
+                <span class="curso-destacado-item3">$8000</span>
+                <button class="curso-destacado-item4" type="button"><a href="detalle-de-curso.html">+Info</a></button>
             </article>
         </section>
         <section>
@@ -145,25 +168,20 @@
             <span>Bariloche</span>
         </div>
         <div>
-            <h4>Siguenos...</h4>
-            <div>
+            <h4>Siguenos en nuestras redes</h4>
+            <div class="redes">Diseño Web
                 <a class="contacto" href="https://es-la.facebook.com/UnlamOficial/" target="blank">
                     <img src="img/redes-facebook.png">
                 </a>
-            </div>
-            <div>
+
                 <a class="contacto" href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank">
                     <img src="img/redes-instagram.png">
                 </a>
-            </div>
-            <div>
+
                 <a class="contacto" href="https://twitter.com/UnlamOficial" target="blank">
                     <img src="img/redes-tweeter.png">
                 </a>
             </div>
-        </div>
-        <div>
-            <a href="#go-top">Ir al inicio</a>
         </div>
     </footer>
 </body>

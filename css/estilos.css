@@ -8,13 +8,13 @@ body {
   background-image: url(../img/fondos/grunge_wall.png);
 }
 
-.header-container{
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-container div{
+.header-container div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,11 +25,9 @@ body {
   padding: 50px;
   display: flex;
   justify-content: space-between;
- 
-
 }
 
-.menu-principal{
+.menu-principal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,14 +36,13 @@ body {
   height: 40px;
 }
 
-.menu-principal a{
+.menu-principal a {
   margin: 20px;
   color: black;
   text-decoration: none;
-  
 }
 
-.menu-principal a:hover{
+.menu-principal a:hover {
   color: white;
 }
 
@@ -60,24 +57,211 @@ body {
   margin: 10px;
 }
 
-#search-bar{
+#search-bar {
   width: 80%;
   height: 30px;
   border-radius: 12px;
   text-align: center;
 }
 
-#search-container{
+#search-container {
   width: 60%;
   align-items: center;
 }
 
-.shopping-cart{
+.shopping-cart {
   display: flex;
 }
 
-.redes{
+.redes {
   display: flex;
   flex-direction: row;
 }
 
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/fondos/fondo-claro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-container p {
+  font-size: 30px;
+  padding: 5px 10px;
+  position: relative;
+  bottom: 50px;
+  opacity: 80%;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+}
+
+.slider img {
+  width: 600px;
+  padding: 15px;
+  border-radius: 10%;
+  filter: drop-shadow(8px 8px 10px gray);
+}
+
+.icono-flecha {
+  font-size: 40px;
+  color: rgb(26, 29, 238);
+}
+
+.pasos-inscripcion {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/slider-3.jpg);
+  background-repeat: no-repeat;
+  background-size: 750px 400px;
+  background-position: 10px;
+  opacity: 80%;
+  background-color: gray;
+  align-items: flex-end;
+}
+
+.pasos-inscripcion h2 {
+  align-self: flex-end;
+  width: 50%;
+  text-align: right;
+  font-size: 70px;
+}
+
+.pasos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 50%;
+  height: 350px;
+  background-color: greenyellow;
+  position: relative;
+  top: 10px;
+  border-radius: 80px 15px 15px 80px;
+  margin-bottom: 15px;
+}
+
+.pasos-container article,
+i {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  font-size: 25px;
+}
+
+#cursos-destacados-titulo {
+  color: rgb(47, 48, 124);
+  text-align: center;
+  height: 30px;
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 50px;
+  text-shadow: lightseagreen;
+}
+
+.cursos-destacados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+  border-radius: 10px;
+  background-color: rgb(127, 166, 214);
+  margin: 15px;
+  margin: 50px 80px 50px 80px;
+  height: 200px;
+  padding: 50px;
+  -webkit-box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
+  -moz-box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
+  box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(25% - 35px);
+}
+
+.item1 {
+  background-image: url(../img/detalle-curso-android.jpg);
+  filter: opacity(90%);
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-position: center top;
+}
+
+.item2 {
+  background-image: url(../img/curso-full-stack.jpg);
+  filter: opacity(90%);
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-position: center top;
+}
+.item3 {
+  background-image: url(../img/diseno-web.png);
+  filter: opacity(90%);
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-position: center top;
+}
+.item4 {
+  background-image: url(../img/python.jpg);
+  filter: opacity(90%);
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-position: center top;
+}
+.curso-destacado-item1 {
+  text-align: right;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  font-size: 30px;
+  border-top-style: groove;
+  width: 100%;
+}
+.curso-destacado-item2 {
+  font-weight: bold;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  font-size: 20px;
+  display: inline-block;
+  height: 30px;
+}
+.curso-destacado-item3 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 30%;
+  height: 30px;
+  text-align: center;
+  background-image: url(../img/precio.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 0px 10px 10px 0px;
+  text-align: left;
+  font-size: 15px;
+}
+.curso-destacado-item4 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 2em;
+  width: 40px;
+  height: 40px;
+}

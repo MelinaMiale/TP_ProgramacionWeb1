@@ -5,19 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeCODE</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/giftcard.css">
+    <title>WeCODE Giftcard</title>
 </head>
 
 <body>
-    <header id="go-top">
+
+    <header id="go-top" class="header-container">
         <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
-        <div>
-            <form action="#">
-                <label>Encuentra lo que estas buscando</label>
-                <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso">
-                <input type="submit" value="Buscar">
-            </form>
+        <div id="search-container">
             <datalist id="listado_cursos">
                 <option value="Android"></option>
                 <option value="Python"></option>
@@ -26,10 +23,12 @@
                 <option value="Seguridad Informática"></option>
                 <option value=".Net"></option>
             </datalist>
+            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso"
+                id="search-bar">
         </div>
         <div>
             <div>
-                <a href="#">
+                <a href="#" class="shopping-cart">
                     <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
                 </a>
                 <span>
@@ -38,10 +37,14 @@
             </div>
         </div>
     </header>
+
     <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="eventos.html">Proximos eventos</a></li>
+        <ul class="menu-principal">
+            <li><a href="index.html">Inicio</a> </li>
+            <li><a href="detalle-de-curso.html">Cursos</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="giftcard.html">Giftcard</a></li>
+            <li><a href="inscripcion.html">Incripciones</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
@@ -51,7 +54,7 @@
 Esta página permitirá contactarse con nuestra empresa. 
 El formulario debe solicitar Nombre y
 apellido, mail, teléfono (opcional) y permitir ingresar una consulta, el resultado de este
-formulario se debe enviar por mail.
+formulario se debe enviar por mail. >>>> este envio no va en la 1er entrega
 La página también debe tener un mapa con la ubicación ficticia de la empresa. Y mostrar un
 apartado con los datos de contacto de la empresa. -->
         <h1>CONTACTO</h1>
@@ -88,7 +91,7 @@ apartado con los datos de contacto de la empresa. -->
 
     </main>
 
-    <footer>
+    <footer class="footer-container">
         <div>
             <h4>Desarrollado por:</h4>
             <ul>
@@ -105,16 +108,25 @@ apartado con los datos de contacto de la empresa. -->
         </div>
         <div>
             <h4>Siguenos...</h4>
-            <div><a class="contacto" href="https://es-la.facebook.com/UnlamOficial/" target="blank"><img
-                        src="img/redes-facebook.png"></a>
+            <div>
+                <a class="contacto" href="https://es-la.facebook.com/UnlamOficial/" target="blank">
+                    <img src="img/redes-facebook.png">
+                </a>
             </div>
-            <div><a class="contacto" href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank"><img
-                        src="img/redes-instagram.png"></a></div>
-            <div><a class="contacto" href="https://twitter.com/UnlamOficial" target="blank"><img
-                        src="img/redes-tweeter.png"></a>
+            <div>
+                <a class="contacto" href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank">
+                    <img src="img/redes-instagram.png">
+                </a>
+            </div>
+            <div>
+                <a class="contacto" href="https://twitter.com/UnlamOficial" target="blank">
+                    <img src="img/redes-tweeter.png">
+                </a>
             </div>
         </div>
-        <a href="#go-top">Ir al inicio</a>
+        <div>
+            <a href="#go-top">Ir al inicio</a>
+        </div>
     </footer>
 </body>
 
