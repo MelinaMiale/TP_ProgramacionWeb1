@@ -71,6 +71,7 @@
 
 #boton-confirmar:hover{
     background-color: red;
+    cursor: pointer;
 }
 
 #nombre-destinatario{

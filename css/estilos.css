@@ -73,6 +73,17 @@ body {
   display: flex;
 }
 
+#shopping-cart-number{
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  background-color: rgb(218, 80, 80);
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
 .redes {
   display: flex;
   flex-direction: row;
@@ -265,3 +276,4 @@ i {
   width: 40px;
   height: 40px;
 }
+
