@@ -14,7 +14,7 @@
 
     <header id="go-top" class="header-container">
         <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
-        <div id="search-container">
+        <form action="">
             <datalist id="listado_cursos">
                 <option value="Android"></option>
                 <option value="Python"></option>
@@ -23,21 +23,15 @@
                 <option value="Seguridad Informática"></option>
                 <option value=".Net"></option>
             </datalist>
-            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso"
-                id="search-bar">
-        </div>
-        <div>
-            <div>
-                <a href="#" class="shopping-cart">
-                    <img class="logo" src="img/shopping-cart.png" alt="shopping-cart">
-                </a>
-                <span>
-                    <label id="shopping-cart-number"> 0 </label>
-                </span>
-            </div>
+            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso">
+        </form>
+        <div class="shopping-cart">
+            <a href="#">
+                <img src="img/shopping-cart.png" alt="shopping-cart">
+                <span id="shopping-cart-number">0</span>
+            </a>
         </div>
     </header>
-
     <nav>
         <ul class="menu-principal">
             <li><a href="index.html">Inicio</a> </li>
@@ -148,34 +142,28 @@
     </main>
 
     <footer class="footer-container">
-        <div>
-            <h4>Desarrollado por:</h4>
+        <div class="integrantes">
+            <h4>Diseño Web</h4>
             <ul>
                 <li>Miale Melina Soledad - DNI: 32.760.005</li>
                 <li>Garcia Suarez Julian - DNI: 41.428.826 </li>
             </ul>
         </div>
-        <div>
+        <div class="oficinas">
             <h4>Oficinas</h4>
             <span>Ciudad de Buenos Aires</span>
             <span>Posadas</span>
             <span>Mar del Plata</span>
             <span>Bariloche</span>
         </div>
-        <div>
+        <div class="contacto">
             <h4>Siguenos en nuestras redes</h4>
-            <div class="redes">
-                <a class="contacto" href="https://es-la.facebook.com/UnlamOficial/" target="blank">
-                    <img src="img/redes-facebook.png">
-                </a>
-
-                <a class="contacto" href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank">
-                    <img src="img/redes-instagram.png">
-                </a>
-
-                <a class="contacto" href="https://twitter.com/UnlamOficial" target="blank">
-                    <img src="img/redes-tweeter.png">
-                </a>
+            <div>
+                <a href="https://es-la.facebook.com/UnlamOficial/" target="blank"><img src="img/facebook.png"></a>
+                <a href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank"><img
+                        src="img/instagram.png"></a>
+                <a href="https://twitter.com/UnlamOficial" target="blank"><img src="img/tweeter.png"></a>
+                <a href="https://twitter.com/UnlamOficial" target="blank"><img src="img/wasap.png"></a>
             </div>
         </div>
     </footer>
