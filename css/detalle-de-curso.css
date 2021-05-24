@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+
 .detalle-curso-container {
   /* background-color: black; */
   background-image: url(../img/fondos/fondo-matrix.jpg);
@@ -129,6 +131,7 @@
   font-size: 25px;
   margin: 10px;
   display: inline-block;
+  font-family: "Changa", sans-serif;
 }
 
 .contenido-de-la-clase div > ol {
@@ -137,6 +140,7 @@
 
 .contenido-de-la-clase div > ol > li {
   font-size: 20px;
+  font-family: "Changa", sans-serif;
   list-style-position: inside;
   padding: 40px 10px 15px 15px;
   text-decoration: underline;
@@ -172,6 +176,7 @@
 .video p {
   margin-left: 30px;
   line-height: 5px;
+  font-family: "Changa", sans-serif;
 }
 
 .reloj {
@@ -189,6 +194,7 @@
   text-align: right;
   margin-right: 20px;
   line-height: 5px;
+  font-family: "Changa", sans-serif;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -218,7 +224,8 @@
 
 .perfil h3 {
   font-size: 20px;
-  margin: 10px;
+  font-family: "Changa", sans-serif;
+  margin: 10px 10px 3px 10px;
   display: block;
   width: auto;
   text-align: center;
@@ -230,6 +237,7 @@
 .perfil p {
   width: 80%;
   font-size: 17px;
+  font-family: "Changa", sans-serif;
   text-align: justify;
   color: #4e6f06;
   padding-top: 20px;
@@ -259,9 +267,9 @@
   margin: 15px;
   height: 100px;
   padding: 50px;
-  -webkit-box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
-  -moz-box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
-  box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
+  -webkit-box-shadow: -7px -6px 9px -1px rgba(119, 112, 224, 1);
+  -moz-box-shadow: -7px -6px 9px -1px rgba(119, 112, 224, 1);
+  box-shadow: -7px -6px 9px -1px rgba(119, 112, 224, 1);
   display: flex;
   flex-direction: column;
   position: relative;
