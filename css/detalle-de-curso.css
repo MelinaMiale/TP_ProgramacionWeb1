@@ -73,6 +73,12 @@
   -moz-box-shadow: 7px 7px 5px 0px rgba(102, 99, 99, 0.75);
 }
 
+.img-box div > button:hover {
+  color: blue;
+  font-weight: bold;
+  width: 150px;
+}
+
 .introduccion-al-curso {
   display: flex;
   flex-direction: column;
@@ -102,11 +108,97 @@
   list-style-position: inside;
   list-style: circle;
 }
+/* ---------------------------------------------------------------------------- */
+
+.contenido-de-la-clase {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-de-la-clase h3 {
+  font-size: 25px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.contenido-de-la-clase div > ol {
+  padding: 15px;
+}
+
+.contenido-de-la-clase div > ol > li {
+  font-size: 20px;
+  list-style-position: inside;
+  padding: 40px 10px 15px 15px;
+  text-decoration: underline;
+}
+
+.modulo {
+  width: 90%;
+  margin-left: 30px;
+}
+
+.modulo li {
+  list-style: none;
+}
+
+.modulo li > div {
+  border-style: groove;
+  border-radius: 5px;
+  display: flex;
+  width: 50%;
+  height: 30px;
+}
 
 .video {
-  width: 40px;
+  background-image: url(../img/icono-video.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 15px;
+  display: block;
+  width: 80%;
+}
+
+.video p {
+  margin-left: 30px;
+  line-height: 5px;
 }
 
 .reloj {
-  width: 25px;
+  width: 30%;
+  background-image: url(../img/clock.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 15px;
+  display: block;
+  width: 20%;
+}
+
+.reloj p {
+  text-align: right;
+  margin-right: 20px;
+  line-height: 5px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.docente {
+  display: flex;
+  background-color: brown;
+  height: 230px;
+}
+
+.perfil {
+  background-image: url(../img/ranking.svg);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 210px;
+}
+.docente img {
+  margin: auto;
+  border-radius: 50%;
+  width: 150px;
+  margin: 20px;
 }
