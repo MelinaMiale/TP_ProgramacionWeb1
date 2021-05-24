@@ -113,6 +113,7 @@
 .contenido-de-la-clase {
   display: flex;
   flex-direction: column;
+  margin: 10px 150px 10px 150px;
 }
 
 .contenido-de-la-clase h3 {
@@ -185,20 +186,153 @@
 
 .docente {
   display: flex;
-  background-color: brown;
+  background-color: #c2f554;
   height: 230px;
+  margin: 50px 0px 50px 0px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-.perfil {
+.foto {
   background-image: url(../img/ranking.svg);
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: bottom center;
-  height: 210px;
+  height: 225px;
 }
 .docente img {
   margin: auto;
   border-radius: 50%;
-  width: 150px;
+  width: 170px;
   margin: 20px;
+}
+
+.perfil h3 {
+  font-size: 20px;
+  margin: 10px;
+  display: block;
+  width: auto;
+  text-align: center;
+  font-weight: bold;
+  color: #5a8009;
+  background-color: aliceblue;
+}
+
+.perfil p {
+  width: 80%;
+  font-size: 17px;
+  text-align: justify;
+  color: #4e6f06;
+  padding-top: 20px;
+  margin: auto;
+}
+/* ---------------------------------------------------------------------------- */
+/* .cursos-populares {
+  margin: 100px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cursos-populares div {
+  margin: 15px;
+  background-color: darkgoldenrod;
+  width: 150px;
+  height: 150px;
+}
+
+.cursos-populares div h3 {
+  background-color: darkgray;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+} */
+
+.cursos-populares {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  height: 230px;
+}
+
+.curso-1,
+.curso-2,
+.curso-3 {
+  border-radius: 10px;
+  background-color: rgb(127, 166, 214);
+  margin: 15px;
+  height: 100px;
+  padding: 50px;
+  -webkit-box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
+  -moz-box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
+  box-shadow: -37px -32px 7px -8px rgba(139, 133, 222, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100px;
+}
+
+.curso-1 {
+  background-image: url(../img/curso-full-stack.jpg);
+  filter: opacity(90%);
+  background-repeat: no-repeat;
+  background-size: 62% 62%;
+  background-position: center top;
+}
+.curso-2 {
+  background-image: url(../img/diseno-web.png);
+  filter: opacity(90%);
+  background-repeat: no-repeat;
+  background-size: 62% 62%;
+  background-position: center top;
+}
+.curso-3 {
+  background-image: url(../img/python.jpg);
+  filter: opacity(90%);
+  background-repeat: no-repeat;
+  background-size: 62% 62%;
+  background-position: center top;
+}
+.curso-populares-item1 {
+  text-align: right;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  font-size: 18px;
+  border-top-style: groove;
+  width: 100%;
+}
+.curso-populares-item2 {
+  font-weight: bold;
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  font-size: 15px;
+  display: inline-block;
+  height: 30px;
+}
+.curso-populares-item3 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 30%;
+  height: 30px;
+  text-align: right;
+  background-image: url(../img/precio.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  width: 50%;
+}
+.curso-populares-item4 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 2em;
+  width: 40px;
+  height: 40px;
 }
