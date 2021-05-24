@@ -113,7 +113,16 @@
 .contenido-de-la-clase {
   display: flex;
   flex-direction: column;
-  margin: 10px 150px 10px 150px;
+  margin: 0px 100px 10px 100px;
+  padding: 10px 75px 10px 75px;
+  background-image: linear-gradient(
+    to right top,
+    #83f091,
+    #88f07b,
+    #90ef62,
+    #9bed44,
+    #a8eb12
+  );
 }
 
 .contenido-de-la-clase h3 {
@@ -227,26 +236,6 @@
   margin: auto;
 }
 /* ---------------------------------------------------------------------------- */
-/* .cursos-populares {
-  margin: 100px;
-  background-color: cadetblue;
-  display: flex;
-  justify-content: space-around;
-}
-
-.cursos-populares div {
-  margin: 15px;
-  background-color: darkgoldenrod;
-  width: 150px;
-  height: 150px;
-}
-
-.cursos-populares div h3 {
-  background-color: darkgray;
-  width: 100%;
-  line-height: 30px;
-  text-align: center;
-} */
 
 .cursos-populares {
   display: flex;
@@ -254,6 +243,12 @@
   justify-content: space-around;
   padding: 20px;
   height: 230px;
+  background-image: url(../img/fondos/fondo-claro.jpg);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  border-bottom-style: double;
+  border-top-style: double;
 }
 
 .curso-1,
