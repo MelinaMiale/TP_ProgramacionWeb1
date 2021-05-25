@@ -26,12 +26,13 @@
     height: 40px;
     width: 100px;
     border-radius: 12px;
-    background-color: grey;
+    background-color: #c2f554;
     margin: 10px;
+    cursor: pointer;
 }
 
 .boton:hover{
-    color: white;
+    color: #4e6f06;
 }
 
 .boton-inscribirse{
@@ -49,7 +50,7 @@
 }
 
 .boton-agregar:hover{
-    color: white;
+    color: #4e6f06;
 }
 
 
@@ -72,3 +73,19 @@ h2{
 #precio{
     font-size: 30px;
 }
+
+.contenedor-titulo{
+    background-color: #c2f554;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#titulo-curso{
+    background-color: #4e6f06;
+    width: 200px;
+    position: relative;
+    left: 100px;
+}
+
