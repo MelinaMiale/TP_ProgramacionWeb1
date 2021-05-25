@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/giftcard.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <title>WeCODE Giftcard</title>
 </head>
 
@@ -54,29 +54,36 @@ apartado con los datos de contacto de la empresa. -->
         <section>
             <form action="#">
                 <!-- para la segunda entrega setear method a POST-->
-                <label for="name">NOMBRE</label>
-                <input type="text" id="name" name="name" required autofocus>
+                <div class="name-lastname">
+                    <label for="name">NOMBRE</label>
+                    <input type="text" id="name" name="name" required autofocus>
+                
+                    <label for="last-name">APELLIDO</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
 
-                <label for="last-name">APELLIDO</label>
-                <input type="text" id="last-name" name="last-name" required>
+                <div class="email-tel">
+                    <label for="email" >EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="phone-number" id="tel-label">TELEFONO</label>
+                    <input type="tel" id="phone-number" name="phone-number">
+                </div>
 
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone-number">TELEFONO</label>
-                <input type="tel" id="phone-number" name="phone-number">
-
-                <label for="query">CONSULTA</label>
-                <textarea name="query" id="query" cols="30" rows="10"></textarea>
-
-                <input type="submit" value="Enviar">
+                <div class="consulta">
+                    <label for="query">CONSULTA</label>
+                    <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                </div>
+                
+                
+                <input type="submit" value="Enviar" id="boton">
             </form>
         </section>
 
         <section>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.313160349153!2d-58.49680539843441!3d-34.5883206497626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb647d3e6cfa7%3A0x318a6fa90cbedbe5!2sCondarco%204230%2C%20C1419DPM%20CABA!5e0!3m2!1ses-419!2sar!4v1620610788534!5m2!1ses-419!2sar"
-                allowfullscreen="" loading="lazy">
+                allowfullscreen="" loading="lazy" id="mapa">
             </iframe>
         </section>
 
