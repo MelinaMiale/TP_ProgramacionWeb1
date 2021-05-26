@@ -1,132 +1,127 @@
-
-form{
-    display: flex;
-    flex-direction: column;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-h1{
-    text-align: center;
-    font-family: monospace;
-    font-size: 30px;
-    margin: 50px;
+h1 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 30px;
+  margin: 50px;
 }
 
-.name-lastname input{
-    width: 35%;
-    height: 30px;
-    margin-right: 20px;
-    margin-left: 15px;
-    background-color: rgb(143, 138, 138);
-    text-align: center;
-    background-image: url(/img/fondo-gris.png);
-    font-size: 20px;
-    border: solid black 3px;
-    color: white;
-    
+.name-lastname input {
+  width: 35%;
+  height: 30px;
+  margin-right: 20px;
+  margin-left: 15px;
+  background-color: rgb(143, 138, 138);
+  text-align: center;
+  background-image: url(/img/fondo-gris.png);
+  font-size: 20px;
+  border: solid black 3px;
+  color: white;
 }
 
-.name-lastname label{
-    font-size: 20px;
-    margin: 30px;
+.name-lastname label {
+  font-size: 20px;
+  margin: 30px;
 }
 
-#email{
-    position: relative;
-    left: 16px;
+#email {
+  position: relative;
+  left: 16px;
 }
 
-#tel-label{
-    position: relative;
-    left: 12px;
+#tel-label {
+  position: relative;
+  left: 12px;
 }
 
-.name-lastname{
-
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+.name-lastname {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
-.email-tel{
-    
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+.email-tel {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
-.email-tel input{
-    width: 35%;
-    height: 30px;
-    margin-right: 20px;
-    margin-left: 15px;
-    background-color: rgb(143, 138, 138);
-    text-align: center;
-    background-image: url(/img/fondo-gris.png);
-    font-size: 20px;
-    border: solid black 3px;
-    color: white;
+.email-tel input {
+  width: 35%;
+  height: 30px;
+  margin-right: 20px;
+  margin-left: 15px;
+  background-color: rgb(143, 138, 138);
+  text-align: center;
+  background-image: url(/img/fondo-gris.png);
+  font-size: 20px;
+  border: solid black 3px;
+  color: white;
 }
 
-.email-tel label{
-    font-size: 20px;
-    margin: 30px;
+.email-tel label {
+  font-size: 20px;
+  margin: 30px;
 }
 
-.consulta{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 30px;
+.consulta {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
 }
 
-.consulta label{
-    font-size: 20px;
-    margin: 30px;
+.consulta label {
+  font-size: 20px;
+  margin: 30px;
 }
 
-.consulta textarea{
-    width: 84%;
-    background-color: rgb(143, 138, 138);
-    background-image: url(/img/fondo-gris.png);
-    font-size: 20px;
-    border: solid black 3px;
-    color: white;
-    padding: 10px;
-    position: relative;
-    left: -23px;
-
+.consulta textarea {
+  width: 84%;
+  background-color: rgb(143, 138, 138);
+  background-image: url(/img/fondo-gris.png);
+  font-size: 20px;
+  border: solid black 3px;
+  color: white;
+  padding: 10px;
+  position: relative;
+  left: -23px;
 }
 
-#boton{
-    margin: 50px;
-    width: 200px;
-    height: 60px;
-    background-image: url(/img/fondo-gris.png);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 90px;
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
+#boton {
+  margin: 50px;
+  width: 200px;
+  height: 60px;
+  background-image: url(/img/fondo-gris.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 90px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
 }
 
-#boton:hover{
-    color: black;
+#boton:hover {
+  color: black;
 }
 
-#mapa{
-    margin-top: 150px;
-    width: 100%;
+#mapa {
+  margin-top: 150px;
+  width: 100%;
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/contacto-Version2.css">
     <title>WeCODE - Contactanos</title>
 </head>
 
@@ -38,52 +38,59 @@
             <li><a href="detalle-de-curso.html">Cursos</a></li>
             <li><a href="">Eventos</a></li>
             <li><a href="giftcard.html">Giftcard</a></li>
-            <li><a href="inscripcion.html">Incripciones</a></li>
+            <li><a href="inscripcion.html">Inscripciones</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <main>
-        <!--  Ejemplo de Página de formulario de contacto
-Esta página permitirá contactarse con nuestra empresa. 
-El formulario debe solicitar Nombre y
-apellido, mail, teléfono (opcional) y permitir ingresar una consulta, el resultado de este
-formulario se debe enviar por mail. >>>> este envio no va en la 1er entrega
-La página también debe tener un mapa con la ubicación ficticia de la empresa. Y mostrar un
-apartado con los datos de contacto de la empresa. -->
         <h1>CONTACTO</h1>
+        <section class="datos-empresa">
+            <h2>Datos de Contacto</h2>
+            <p>WeCode Learning Plataform S.A</p>
+            <p>Direccion Fiscal: España 590, R8400 San Carlos de Bariloche, Río Negro</p>
+            <p>Oficina Buenos Aires: Condarco 4232, CABA</p>
+            <p>Telefono: 0294 442-1596</p>
+            <p>Email: wecode@gmail.com</p>
+        </section>
         <section>
             <form action="#">
                 <!-- para la segunda entrega setear method a POST-->
                 <div class="name-lastname">
-                    <label for="name"><b>NOMBRE</b></label>
-                    <input type="text" id="name" name="name" required autofocus>
-                
-                    <label for="last-name"><b>APELLIDO</b></label>
-                    <input type="text" id="last-name" name="last-name" required>
+                    <div>
+                        <label for="name"><b>NOMBRE</b></label>
+                        <input type="text" id="name" name="name" required autofocus>
+                    </div>
+                    <div>
+                        <label for="last-name"><b>APELLIDO</b></label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
                 </div>
-
                 <div class="email-tel">
-                    <label for="email" ><b>EMAIL</b></label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="phone-number" id="tel-label"><b>TELEFONO</b></label>
-                    <input type="tel" id="phone-number" name="phone-number">
+                    <div>
+                        <label for="email"><b>EMAIL</b></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone-number" id="tel-label"><b>TELEFONO</b></label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                </div>
+                <div class="consulta">
+                    <div>
+                        <label for="query"><b>CONSULTA</b></label>
+                        <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
 
-                <div class="consulta">
-                    <label for="query"><b>CONSULTA</b></label>
-                    <textarea name="query" id="query" cols="30" rows="10"></textarea>
-                </div>
-                
-                
                 <input type="submit" value="Enviar" id="boton">
             </form>
         </section>
 
-        <section>
+        <section class="mapa">
+            <h2>UBICACION</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.313160349153!2d-58.49680539843441!3d-34.5883206497626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb647d3e6cfa7%3A0x318a6fa90cbedbe5!2sCondarco%204230%2C%20C1419DPM%20CABA!5e0!3m2!1ses-419!2sar!4v1620610788534!5m2!1ses-419!2sar"
-                allowfullscreen="" loading="lazy" id="mapa">
+                allowfullscreen="" loading="lazy">
             </iframe>
         </section>
 
