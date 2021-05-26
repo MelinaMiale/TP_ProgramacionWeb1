@@ -1,127 +1,148 @@
-form {
-  display: flex;
-  flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   text-align: center;
-  font-family: monospace;
   font-size: 30px;
   margin: 50px;
 }
 
-.name-lastname input {
-  width: 35%;
-  height: 30px;
-  margin-right: 20px;
-  margin-left: 15px;
-  background-color: rgb(143, 138, 138);
-  text-align: center;
-  background-image: url(/img/fondo-gris.png);
-  font-size: 20px;
-  border: solid black 3px;
-  color: white;
-}
-
-.name-lastname label {
-  font-size: 20px;
-  margin: 30px;
-}
-
-#email {
-  position: relative;
-  left: 16px;
-}
-
-#tel-label {
-  position: relative;
-  left: 12px;
-}
-
-.name-lastname {
-  text-align: center;
+main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
 }
 
-.email-tel {
-  text-align: center;
+.datos-empresa {
+  text-align: end;
+  align-self: flex-end;
+  background-color: rgb(114, 207, 114);
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  padding: 15px;
+  height: 150px;
+  width: 700px;
+  background-image: url(../img/logo.JPG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  margin: auto;
+  border-radius: 15px;
 }
 
-.email-tel input {
-  width: 35%;
-  height: 30px;
-  margin-right: 20px;
-  margin-left: 15px;
-  background-color: rgb(143, 138, 138);
-  text-align: center;
-  background-image: url(/img/fondo-gris.png);
-  font-size: 20px;
-  border: solid black 3px;
-  color: white;
-}
-
-.email-tel label {
-  font-size: 20px;
-  margin: 30px;
-}
-
-.consulta {
-  text-align: center;
+.mapa {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.mapa iframe {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  height: 300px;
+}
+
+.mapa h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.datos-empresa h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
 }
 
-.consulta label {
-  font-size: 20px;
-  margin: 30px;
+.name-lastname,
+.email-tel,
+.consulta {
+  display: flex;
+  padding: 15px;
 }
 
-.consulta textarea {
-  width: 84%;
+.consulta {
+  margin: auto;
+  width: 70%;
+  height: 200px;
+}
+
+.name-lastname div,
+.email-tel div,
+.consulta div {
+  display: flex;
   background-color: rgb(143, 138, 138);
-  background-image: url(/img/fondo-gris.png);
-  font-size: 20px;
-  border: solid black 3px;
-  color: white;
-  padding: 10px;
-  position: relative;
-  left: -23px;
+  margin: 5px;
+  width: 50%;
+  height: 50px;
+  border-width: 5px;
+  border-style: groove;
+  border-radius: 5px;
+}
+
+.name-lastname div > label,
+.email-tel div > label,
+.consulta div > label {
+  width: 20%;
+  align-self: center;
+  margin-left: 15px;
+}
+
+.name-lastname div > input,
+.email-tel div > input {
+  width: 80%;
+}
+
+.consulta > div {
+  height: 200px;
+  align-self: center;
+  margin: auto;
+  width: 90%;
+}
+
+.consulta > div > textarea {
+  align-self: stretch;
+  flex-grow: 8;
 }
 
 #boton {
-  margin: 50px;
+  /* margin: 50px; */
   width: 200px;
   height: 60px;
-  background-image: url(/img/fondo-gris.png);
-  display: flex;
+  background-image: url(../img/fondo-gris.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin: auto;
-  margin-top: 90px;
+  margin-top: 50px;
   cursor: pointer;
   color: white;
   font-size: 20px;
+  opacity: 80%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(158, 150, 158, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(158, 150, 158, 1);
+  box-shadow: 10px 10px 5px 0px rgba(158, 150, 158, 1);
+  border-radius: 5px;
 }
 
 #boton:hover {
   color: black;
-}
-
-#mapa {
-  margin-top: 150px;
-  width: 100%;
+  opacity: 100%;
+  transform: scale(1.5, 1.5);
 }
