@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/index.js"></script>
     <title>WeCODE - Contactanos</title>
 </head>
 
@@ -28,15 +29,18 @@
         <div class="shopping-cart">
             <a href="#">
                 <img src="img/shopping-cart.png" alt="shopping-cart">
-                <span id="shopping-cart-number">0</span>
+                <span id="shopping-cart-number">
+                    <script>document.write(cursosEnCarrito)</script>
+                </span>
             </a>
         </div>
+        <input id="vaciar" type="button" value="vaciar" onclick="vaciar()">
     </header>
     <nav>
         <ul class="menu-principal">
             <li><a href="index.html">Inicio</a> </li>
             <li><a href="detalle-de-curso.html">Cursos</a></li>
-            <li><a href="">Eventos</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
             <li><a href="giftcard.html">Giftcard</a></li>
             <li><a href="inscripcion.html">Inscripciones</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -53,22 +57,22 @@
             <p>Email: wecode@gmail.com</p>
         </section>
         <section>
-            <form action="#">
+            <form action="#" onsubmit="return validarFormularioContacto()">
                 <!-- para la segunda entrega setear method a POST-->
                 <div class="name-lastname">
                     <div>
                         <label for="name"><b>NOMBRE</b></label>
-                        <input type="text" id="name" name="name" required autofocus>
+                        <input type="text" id="name" name="name" autofocus>
                     </div>
                     <div>
                         <label for="last-name"><b>APELLIDO</b></label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <input type="text" id="last-name" name="last-name">
                     </div>
                 </div>
                 <div class="email-tel">
                     <div>
                         <label for="email"><b>EMAIL</b></label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email">
                     </div>
                     <div>
                         <label for="phone-number" id="tel-label"><b>TELEFONO</b></label>
@@ -78,12 +82,15 @@
                 <div class="consulta">
                     <div>
                         <label for="query"><b>CONSULTA</b></label>
-                        <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                        <textarea name="query" id="query" cols="30" rows="10"
+                            onkeyup="mostrarCantidadCaracteres()"></textarea>
+                        <p id="info-consulta"></p>
                     </div>
-                </div>
 
+                </div>
                 <input type="submit" value="Enviar" id="boton">
             </form>
+            <div id="mensaje" class="error"></div>
         </section>
 
         <section class="mapa">
@@ -140,6 +147,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>

@@ -69,6 +69,15 @@ body {
   color: white;
 }
 
+#vaciar {
+  color: #333ce6;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .menu-principal {
   display: flex;
   justify-content: center;
@@ -199,9 +208,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 30px;
 }
 
-.slider-container p {
+/* .slider-container p {
   font-size: 30px;
   padding: 5px 10px;
   position: relative;
@@ -226,7 +236,7 @@ body {
 .icono-flecha {
   font-size: 40px;
   color: rgb(26, 29, 238);
-}
+} */
 
 .pasos-inscripcion {
   padding: 10px;
@@ -383,6 +393,45 @@ i {
   height: 30px;
   background-image: url(../img/icono-mas-info.png);
   background-size: contain;
+}
+.curso-destacado-item5 {
+  width: fit-content;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: -3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.curso-destacado-item5:hover {
+  position: absolute;
+  bottom: 15px;
+  left: 85px;
+  width: 130px;
+  background-image: linear-gradient(
+    to right top,
+    #f200c8,
+    #f240cb,
+    #f15dce,
+    #f074d1,
+    #ee88d4
+  );
+  -webkit-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* ------------------------------------------------------------------------------- */

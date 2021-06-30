@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCODE</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="js/calendario.js"></script>
+</head>
+
+<body>
+    <header id="go-top" class="header-container">
+        <span><img class="logo" src="img/logo.JPG" alt="logo WeCode"></span>
+        <form action="">
+            <datalist id="listado_cursos">
+                <option value="Android"></option>
+                <option value="Python"></option>
+                <option value="Mongo DB"></option>
+                <option value="Diseño Web"></option>
+                <option value="Seguridad Informática"></option>
+                <option value=".Net"></option>
+            </datalist>
+            <input type="search" name="busqueda_cursos" list="listado_cursos" placeholder="Busque aqui su curso">
+        </form>
+        <div class="shopping-cart">
+            <a href="#">
+                <img src="img/shopping-cart.png" alt="shopping-cart">
+                <span id="shopping-cart-number">0</span>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu-principal">
+            <li><a href="index.html">Inicio</a> </li>
+            <li><a href="detalle-de-curso.html">Cursos</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Giftcard</a></li>
+            <li><a href="inscripcion.html">Inscripciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article id="calendario"></article>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <a class="goTop" href="#go-top"></a>
+        <div class="integrantes">
+            <h4>Diseño Web</h4>
+            <ul>
+                <li>Miale Melina Soledad - DNI: 32.760.005</li>
+                <li>Garcia Suarez Julian - DNI: 41.428.826 </li>
+            </ul>
+        </div>
+        <div class="oficinas">
+            <h4>Oficinas</h4>
+            <span>Ciudad de Buenos Aires
+                <div class="oficinas-content">
+                    <p>Lavalle 648, CABA</p>
+                </div>
+            </span>
+            <span>Posadas
+                <div class="oficinas-content">
+                    <p>Victoria Aguirre 66, Puerto Iguazú</p>
+                </div>
+            </span>
+            <span>Mar del Plata
+                <div class="oficinas-content">
+                    <p>RP11 25, Mar del Plata</p>
+                </div>
+            </span>
+            <span>Bariloche
+                <div class="oficinas-content">
+                    <p>Centro Cívico, San Carlos de Bariloche</p>
+                </div>
+            </span>
+        </div>
+        <div class="contacto">
+            <h4>Siguenos en nuestras redes</h4>
+            <div>
+                <a href="https://es-la.facebook.com/UnlamOficial/" target="blank"><img src="img/facebook.png"></a>
+                <a href="https://www.instagram.com/unlamoficial/?hl=es-la" target="blank"><img
+                        src="img/instagram.png"></a>
+                <a href="https://twitter.com/UnlamOficial" target="blank"><img src="img/tweeter.png"></a>
+                <a href="https://twitter.com/UnlamOficial" target="blank"><img src="img/wasap.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

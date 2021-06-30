@@ -333,9 +333,49 @@
 }
 .curso-populares-item4 {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 2em;
-  width: 40px;
-  height: 40px;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icono-mas-info.png);
+  background-size: contain;
+}
+.curso-populares-item5 {
+  width: fit-content;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: -3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.curso-populares-item5:hover {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  /* width: 130px; */
+  background-image: linear-gradient(
+    to right top,
+    #f200c8,
+    #f240cb,
+    #f15dce,
+    #f074d1,
+    #ee88d4
+  );
+  -webkit-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }

@@ -103,6 +103,8 @@ form {
 .name-lastname div > input,
 .email-tel div > input {
   width: 80%;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .consulta > div {
@@ -115,6 +117,16 @@ form {
 .consulta > div > textarea {
   align-self: stretch;
   flex-grow: 8;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#info-consulta {
+  margin: 10px;
+  text-align: center;
+  height: fit-content;
+  align-self: center;
+  font-style: italic;
 }
 
 #boton {
@@ -145,4 +157,12 @@ form {
   color: black;
   opacity: 100%;
   transform: scale(1.5, 1.5);
+}
+
+.error {
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  color: crimson;
+  font-size: 20px;
 }

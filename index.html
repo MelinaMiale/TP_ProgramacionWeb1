@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--Copiar desde aca-->
+    <link rel="stylesheet" href="css/css-slider/nivo-slider.css">
+    <link rel="stylesheet" href="css/css-slider/default.css">
+    <link rel="stylesheet" href="css/css-slider/micss.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/js-slider/jquery.nivo.slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sliderHome').nivoSlider();
+        });
+    </script>
+    <script src="js/index.js"></script>
+    <!--hasta aca-->
 </head>
 
 <body>
@@ -28,15 +41,18 @@
         <div class="shopping-cart">
             <a href="#">
                 <img src="img/shopping-cart.png" alt="shopping-cart">
-                <span id="shopping-cart-number">0</span>
+                <span id="shopping-cart-number">
+                    <script>document.write(cursosEnCarrito)</script>
+                </span>
             </a>
         </div>
+        <input id="vaciar" type="button" value="vaciar" onclick="vaciar()">
     </header>
     <nav>
         <ul class="menu-principal">
             <li><a href="index.html">Inicio</a> </li>
             <li><a href="detalle-de-curso.html">Cursos</a></li>
-            <li><a href="">Eventos</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
             <li><a href="giftcard.html">Giftcard</a></li>
             <li><a href="inscripcion.html">Inscripciones</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -44,15 +60,21 @@
     </nav>
     <main>
         <section class="slider-container">
-            <div class="slider">
-                <i class="fas fa-chevron-circle-left icono-flecha"></i>
-                <a href="https://www.salesforce.com/news/stories/welcome-to-the-all-digital-work-from-anywhere-world-2/"
-                    target="_blank">
-                    <img src="img/slider-work-from-anywhere.jpg" alt="coding on the wild">
-                </a>
-                <i class="fas fa-chevron-circle-right icono-flecha"></i>
-            </div>
-            <p>Trabajo Remoto</p>
+            <article class="slider-wrapper theme-default">
+                <div id="sliderHome" class="nivoSlider">
+                    <a href="https://www.salesforce.com/news/stories/welcome-to-the-all-digital-work-from-anywhere-world-2/"
+                        target="_blank">
+                        <img src="img/slider-work-from-anywhere.jpg" alt="coding on the wild" title="Atrevete a mas..."
+                            data-transition="fade" />
+                    </a>
+                    <a href="detalle-de-curso.html"><img src="img/slider-learn-android-development.jpg"
+                            alt="learn-android-development" data-transition="fade" /></a>
+                    <img src="img/slider-2.jpg" alt="working from bar" title="El trabajo remoto otorga mas libertades"
+                        data-transition="fade" />
+                    <img src="img/slider-1.jpg" alt="young-programmer" title="Programacion para los mas chicos"
+                        data-transition="fade" />
+                </div>
+            </article>
         </section>
         <section class="pasos-inscripcion">
             <h2>¿Como empiezo?</h2>
@@ -69,24 +91,28 @@
             <article class="item1">
                 <h3 class="curso-destacado-item1">Android</h3>
                 <span class="curso-destacado-item2">50hs</span>
+                <button type="button" class="curso-destacado-item5" onclick="agregarAlCarrito()">Comprar</button>
                 <span class="curso-destacado-item3">$2000</span>
                 <a class="curso-destacado-item4" href="detalle-de-curso.html"></a>
             </article>
             <article class="item2">
                 <h3 class="curso-destacado-item1">FULL STACK</h3>
                 <span class="curso-destacado-item2">100hs</span>
+                <button type="button" class="curso-destacado-item5" onclick="agregarAlCarrito()">Comprar</button>
                 <span class="curso-destacado-item3">$150000</span>
                 <a class="curso-destacado-item4" href="detalle-de-curso.html"></a>
             </article>
             <article class="item3">
                 <h3 class="curso-destacado-item1">Diseño Web</h3>
                 <span class="curso-destacado-item2">15hs</span>
+                <button type="button" class="curso-destacado-item5" onclick="agregarAlCarrito()">Comprar</button>
                 <span class="curso-destacado-item3">$10000</span>
                 <a class="curso-destacado-item4" href="detalle-de-curso.html"></a>
             </article>
             <article class="item4">
                 <h3 class="curso-destacado-item1">Python</h3>
                 <span class="curso-destacado-item2">40hs</span>
+                <button type="button" class="curso-destacado-item5" onclick="agregarAlCarrito()">Comprar</button>
                 <span class="curso-destacado-item3">$8000</span>
                 <a class="curso-destacado-item4" href="detalle-de-curso.html"></a>
             </article>
