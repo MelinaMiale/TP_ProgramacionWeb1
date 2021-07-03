@@ -1,0 +1,10 @@
+main > section {
+  padding: 50px;
+}
+
+main > section > article {
+  padding: 10px;
+  background-color: rgb(207, 175, 236);
+  border-style: groove;
+  border-radius: 25px;
+}

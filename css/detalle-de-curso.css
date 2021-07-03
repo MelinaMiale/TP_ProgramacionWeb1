@@ -135,20 +135,50 @@
 }
 
 .contenido-de-la-clase div > ol {
-  padding: 15px;
+  /*padding: 15px;*/
 }
 
 .contenido-de-la-clase div > ol > li {
+  width: 60%;
   font-size: 20px;
   font-family: "Changa", sans-serif;
   list-style-position: inside;
   padding: 40px 10px 15px 15px;
   text-decoration: underline;
+  /*border: groove;*/
+  vertical-align: middle;
+  position: relative;
+  /* display: block; */
+}
+
+.mostrar-detalle {
+  position: absolute;
+  right: 150px;
+  background-image: url(../img/down-arrows_icon-icons.com_70186.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.ocultar-detalle {
+  position: absolute;
+  right: 100px;
+  background-image: url(../img/up-arrows_icon-icons.com_69819.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  cursor: pointer;
 }
 
 .modulo {
   width: 90%;
   margin-left: 30px;
+  display: none;
 }
 
 .modulo li {
