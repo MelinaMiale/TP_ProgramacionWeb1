@@ -20,9 +20,89 @@ body {
   margin: 20px;
 }
 
-.header-container {
-  display: flex;
-  flex-direction: row;
+@media screen and (max-width: 32em) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    width: 160%;
+  }
+
+  .shopping-cart {
+    position: relative;
+    left: 80px;
+    bottom: 100px;
+  }
+
+  .header-container form {
+    margin-right: 50px;
+  }
+
+  .logo {
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-right: 50px;
+    width: 10%;
+    border-radius: 50px 10px 50px 10px;
+  }
+
+  div {
+    display: flex;
+    width: 300%;
+    justify-content: center;
+  }
+  .menu-principal {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  main {
+    padding: 25px;
+  }
+  .slider-container {
+    width: 350%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fondos/fondo-claro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px;
+  }
+  .slider-container article > div {
+    display: block;
+    width: 100%;
+  }
+
+  .pasos-inscripcion {
+    width: 345%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/slider-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 100px;
+    background-position: 10px;
+    opacity: 80%;
+    background-color: gray;
+    align-items: flex-end;
+  }
+
+  .pasos-inscripcion h2 {
+    align-self: flex-end;
+    width: 25%;
+    text-align: right;
+    font-size: 2.37em;
+  }
+  .pasos-container article,
+  i {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    height: 50px;
+    font-size: 2.96em;
+  }
 }
 
 .header-container form > input {
