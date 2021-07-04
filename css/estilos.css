@@ -20,7 +20,7 @@ body {
   margin: 20px;
 }
 
-@media screen and (max-width: 32em) {
+@media screen and (max-width: 60em) {
   .header-container {
     display: flex;
     align-items: center;
@@ -45,11 +45,7 @@ body {
     border-radius: 50px 10px 50px 10px;
   }
 
-  div {
-    display: flex;
-    width: 300%;
-    justify-content: center;
-  }
+  
   .menu-principal {
     padding: 50px;
     display: flex;

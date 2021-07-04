@@ -40,23 +40,23 @@
 }
 
 #px20{
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 #px28{
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 #px32{
-    font-size: 1.2em;
+    font-size: 0.9em;
 }
 
 #px48{
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 #px60{
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 
 /*giftcard previsualizacion*/
@@ -65,7 +65,7 @@
     width: 15em;
     height: 10em;
     border-radius: 10px;
-    background-image: url("/img/grey.jpg");
+    background-image: url("../img/grey.jpg");
     position: relative;
 }
 
@@ -120,24 +120,24 @@
 }
 
 .number-monto{
-    width: 78%;
+    width: 100%;
     height: 2em;
 }
 .label-monto{
     width: 19%;
 }
 
-#cont-boton{
-    text-align: center;
-}
+
 
 #boton-confirmar{
     background-color: rgb(226, 55, 55);
     color: black;
     width: 80%;
     height: 3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
     border-radius: 0.8em;
+    position: relative;
+    left: 1.5em;
     
 }
 
@@ -149,10 +149,7 @@
 
 
 @media screen and (min-width:47em) {
-    #boton-confirmar{
-        background-color: blue;
-    }
-
+    
     #fondo{
         font-size: 170%;
 
@@ -163,9 +160,7 @@
 
 @media screen and (min-width:60em) {
 
-    #boton-confirmar{
-        background-color: yellow;
-    }
+   
 
     .section-container{
         display: flex;
