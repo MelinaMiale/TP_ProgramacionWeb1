@@ -3,14 +3,13 @@
     
 }
 
-.user-info-container{
+.datos1{
     display: flex;
     flex-direction: column;
     margin: 1.5em;
     align-items: center;
     padding: 0.8em;
     justify-content: center;
-    
 }
 
 .datos{
@@ -21,6 +20,7 @@
     text-align: center;
     
 }
+ 
 
 .boton{
     height: 2.7em;
@@ -39,6 +39,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
+
+#boton-inscribirse{
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    background-color: #c2f554;
+    margin: 10px;
+    cursor: pointer;
     
 }
 
@@ -76,7 +86,7 @@ h2{
 
 .contenedor-titulo{
     background-color: #c2f554;
-    width: 100%;
+    width: 90%;
     height: 6em;
     margin: auto;
     border-radius: 50%;
@@ -85,26 +95,37 @@ h2{
 #titulo-curso{
     background-color: #4e6f06;
     width: 80%;
+    height: 2.6em;
     position: relative;
     margin: auto;
 }
 
+
+
 @media screen and (min-width:60em){
     .form-container{
-        padding: 30px;
+        padding: 2em;
         
     }
     
-    .user-info-container{
+    .datos1{
         display: flex;
         flex-direction: row;
-        margin: 20px;
+        margin: 1.5em;
         align-items: center;
-        padding: 10px;
+        padding: 0.8em;
         justify-content: center;
+        width: 100%;
         
     }
-    
+    #borrar{
+        font-size: 2em;
+    }
+
+    #agregar{
+        font-size: 2em;
+    }
+
     .datos{
         margin: 20px;
         height: 40px;
@@ -134,11 +155,20 @@ h2{
         margin: 20px;
     }
     
+    #boton-inscribirse{
+        height: 40px;
+        width: 100px;
+        border-radius: 12px;
+        background-color: #c2f554;
+        margin: 10px;
+        cursor: pointer;
+        
+    }
+    
     .boton-agregar{
-        padding: 10px;
-        margin: 30px;
-        display: flex;
-        justify-content: left;
+        padding: 0.7em;
+        margin: auto;
+        text-align: center;
     }
     
     .boton-agregar:hover{
@@ -148,36 +178,38 @@ h2{
     
     
     main{
-        margin: 30px;
+        margin: 2em;
     }
     
     h1{
         text-align: center;
-        font-size: 25px;
-        padding: 10px;
+        font-size: 1.7em;
+        padding: 0.6px;
     }
     
     h2{
         text-align: center;
+        font-size: 1.4em;
     
     }
     
     #precio{
-        font-size: 30px;
+        font-size: 2em;
     }
     
     .contenedor-titulo{
         background-color: #c2f554;
-        width: 400px;
-        height: 100px;
+        width: 30%;
+        height: 6em;
         margin: auto;
         border-radius: 50%;
     }
     
     #titulo-curso{
         background-color: #4e6f06;
-        width: 200px;
+        width: 50%;
+        height: 2.6em;
         position: relative;
-        left: 100px;
+        margin: auto;
     }
 }
