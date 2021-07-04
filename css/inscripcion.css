@@ -1,33 +1,33 @@
 .form-container{
-    padding: 30px;
+    padding: 2em;
     
 }
 
 .user-info-container{
     display: flex;
-    flex-direction: row;
-    margin: 20px;
+    flex-direction: column;
+    margin: 1.5em;
     align-items: center;
-    padding: 10px;
+    padding: 0.8em;
     justify-content: center;
     
 }
 
 .datos{
-    margin: 20px;
-    height: 40px;
-    width: 25%;
-    border-radius: 12px;
+    margin: 1.3em;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.8em;
     text-align: center;
     
 }
 
 .boton{
-    height: 40px;
-    width: 100px;
-    border-radius: 12px;
+    height: 2.7em;
+    width: 7em;
+    border-radius: 0.8em;
     background-color: #c2f554;
-    margin: 10px;
+    margin: 1em;
     cursor: pointer;
 }
 
@@ -37,16 +37,15 @@
 
 .boton-inscribirse{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    margin: 20px;
+    
 }
 
 .boton-agregar{
-    padding: 10px;
-    margin: 30px;
-    display: flex;
-    justify-content: left;
+    padding: 0.7em;
+    margin: auto;
+    text-align: center;
 }
 
 .boton-agregar:hover{
@@ -56,36 +55,129 @@
 
 
 main{
-    margin: 30px;
+    margin: 2em;
 }
 
 h1{
     text-align: center;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 1.7em;
+    padding: 0.6px;
 }
 
 h2{
     text-align: center;
+    font-size: 1.4em;
 
 }
 
 #precio{
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .contenedor-titulo{
     background-color: #c2f554;
-    width: 400px;
-    height: 100px;
+    width: 100%;
+    height: 6em;
     margin: auto;
     border-radius: 50%;
 }
 
 #titulo-curso{
     background-color: #4e6f06;
-    width: 200px;
+    width: 80%;
     position: relative;
-    left: 100px;
+    margin: auto;
 }
 
+@media screen and (min-width:60em){
+    .form-container{
+        padding: 30px;
+        
+    }
+    
+    .user-info-container{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+        
+    }
+    
+    .datos{
+        margin: 20px;
+        height: 40px;
+        width: 25%;
+        border-radius: 12px;
+        text-align: center;
+        
+    }
+    
+    .boton{
+        height: 40px;
+        width: 100px;
+        border-radius: 12px;
+        background-color: #c2f554;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+    .boton:hover{
+        color: #4e6f06;
+    }
+    
+    .boton-inscribirse{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .boton-agregar{
+        padding: 10px;
+        margin: 30px;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .boton-agregar:hover{
+        color: #4e6f06;
+    }
+    
+    
+    
+    main{
+        margin: 30px;
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+    h2{
+        text-align: center;
+    
+    }
+    
+    #precio{
+        font-size: 30px;
+    }
+    
+    .contenedor-titulo{
+        background-color: #c2f554;
+        width: 400px;
+        height: 100px;
+        margin: auto;
+        border-radius: 50%;
+    }
+    
+    #titulo-curso{
+        background-color: #4e6f06;
+        width: 200px;
+        position: relative;
+        left: 100px;
+    }
+}

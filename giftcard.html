@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/giftcard.css">
+    
     <title>WeCODE - Giftcard</title>
 </head>
 
@@ -18,7 +19,7 @@
             <datalist id="listado_cursos">
                 <option value="Android"></option>
                 <option value="Python"></option>
-                <option value="Mongo DB"></option>
+                <option value="Mongo DB"></option>30px;
                 <option value="Diseño Web"></option>
                 <option value="Seguridad Informática"></option>
                 <option value=".Net"></option>
@@ -36,7 +37,7 @@
         <ul class="menu-principal">
             <li><a href="index.html">Inicio</a> </li>
             <li><a href="detalle-de-curso.html">Cursos</a></li>
-            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="">Eventos</a></li>
             <li><a href="giftcard.html">Giftcard</a></li>
             <li><a href="inscripcion.html">Inscripciones</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -46,7 +47,17 @@
     <main>
         <section class="section-container">
             <article class="article-giftcard">
-                <img src="/img/giftcard.jpg" alt="" class="giftcard-img">
+                <div id="fondo">
+                    <div id="cont-nombre">
+                        <p id="nombre-p"><span id="nombre"></span></p>
+                    </div>
+                    <div id="cont-monto">
+                        <p id="p-monto">$<span id="monto-gc"></span></p>
+                    </div>
+                    <div>
+                        <img src="img/logo.JPG" alt="logo-weCode"  id="giftcard-logo">
+                    </div>
+                </div>
                 <br><br>
                 <p>VISTA PREVIA DE TU GIFTCARD</p>
                 <br><br>
@@ -58,81 +69,83 @@
                     <label>Nombre</label>
 
                     <input type="text" name="nombre-destinatario" placeholder="Nombre Destinatario"
-                        id="nombre-destinatario">
+                        id="nombre-destinatario" onkeyup="mostrarNombre()">
                     <br><br>
 
                     <label>Color</label> <br>
 
                     <label for="colors"><img class="colors" src="img/blue.png" alt=""></label>
-                    <input type="radio" name="colors" value="blue">
+                    <input type="radio" name="colors" value="blue" id="colors1" onchange="cambiarColor()">
 
                     <label for="colors"> <img class="colors" src="img/red.png" alt=""></label>
-                    <input type="radio" name="colors" value="red">
+                    <input type="radio" name="colors" value="red" id="colors2" onchange="cambiarColor()">
 
                     <label for="colors"><img class="colors" src="img/green.png" alt=""></label>
-                    <input type="radio" name="colors" value="green">
+                    <input type="radio" name="colors" value="green" id="colors3" onchange="cambiarColor()">
 
-                    <label for="colors"><img class="colors" src="img/yellow.png" alt=""></label>
-                    <input type="radio" name="colors" value="yellow">
+                    <label for="colors"><img class="colors" src="img/white.jpeg" alt=""></label>
+                    <input type="radio" name="colors" value="white" id="colors4" onchange="cambiarColor()">
 
-                    <label for="colors"><img class="colors" src="img/pink.png" alt=""></label>
-                    <input type="radio" name="colors" value="pink">
+                    <label for="colors"><img class="colors" src="img/black.jpg" alt=""></label>
+                    <input type="radio" name="colors" value="black" id="colors5" onchange="cambiarColor()">
                     <br><br>
 
                     <label>Tamaño de fuente</label>
 
                     <br>
                     <label for="font-size" id="px20">20px</label>
-                    <input type="radio" name="font-size" value="20px">
+                    <input type="radio" name="font-size" value="20px" onchange="cambiarTamanioFuente()">
 
                     <label for="font-size" id="px28">28px</label>
-                    <input type="radio" name="font-size" value="28px">
+                    <input type="radio" name="font-size" value="28px" onchange="cambiarTamanioFuente()">
 
                     <label for="font-size" id="px32">32px</label>
-                    <input type="radio" name="font-size" value="32px">
+                    <input type="radio" name="font-size" value="32px" onchange="cambiarTamanioFuente()">
 
                     <label for="font-size" id="px48">48px</label>
-                    <input type="radio" name="font-size" value="48px">
+                    <input type="radio" name="font-size" value="48px" onchange="cambiarTamanioFuente()">
 
                     <label for="font-size" id="px60">60px</label>
-                    <input type="radio" name="font-size" value="60px">
+                    <input type="radio" name="font-size" value="60px" onchange="cambiarTamanioFuente()">
                     <br><br>
 
-                    <label for="monto">Monto $</label>
-                    <input type="number" name="monto" value="monto" class="number-monto">
+                    <label for="monto" id="label-monto">Monto $</label>
+                    <input type="number" name="monto" value="monto" class="number-monto" id="monto-input" onchange="mostrarMonto()">
                     <br><br>
 
-                    <label>Ubicacion</label><br>
+                    <label>Ubicacion Logo</label><br>
 
                     <label for="ubicacion"><img class="ubicaciones" src="img/arriba-izquierda.png" alt=""></label>
-                    <input type="radio" name="ubicacion" value="arriba-izquierda">
+                    <input type="radio" name="ubicacion" value="arriba-izquierda" onchange="cambiarUbicacionLogo()">
 
                     <label for="ubicacion"><img class="ubicaciones" src="img/arriba-derecha.png" alt=""></label>
-                    <input type="radio" name="ubicacion" value="arriba-derecha">
+                    <input type="radio" name="ubicacion" value="arriba-derecha"  onchange="cambiarUbicacionLogo()">
 
                     <label for="ubicacion"><img class="ubicaciones" src="img/abajo-izquierda.png" alt=""></label>
-                    <input type="radio" name="ubicacion" value="arriba-izquierda">
+                    <input type="radio" name="ubicacion" value="abajo-izquierda"  onchange="cambiarUbicacionLogo()">
 
                     <label for="ubicacion"><img class="ubicaciones" src="img/abajo-derecha.png" alt=""></label>
-                    <input type="radio" name="ubicacion" value="arriba-derecha"> <br><br>
+                    <input type="radio" name="ubicacion" value="abajo-derecha"  onchange="cambiarUbicacionLogo()"> <br><br>
 
                     <label>Fondo</label><br>
 
-                    <label for="fondo"><img class="fondos" src="/img/black.jpg" alt=""></label>
-                    <input type="radio" name="fondo" value="black">
+                    <label for="fondo"><img class="fondos" src="img/black-p.jpg" alt=""></label>
+                    <input type="radio" name="fondo" value="black" onchange="cambiarFondo()">
 
-                    <label for="fondo"><img class="fondos" src="/img/white.jpeg" alt=""></label>
-                    <input type="radio" name="fondo" value="white">
+                    <label for="fondo"><img class="fondos" src="img/light-color.jpg" alt=""></label>
+                    <input type="radio" name="fondo" value="white" onchange="cambiarFondo()">
 
-                    <label for="fondo"><img class="fondos" src="/img/navidad.jpeg" alt=""></label>
-                    <input type="radio" name="fondo" value="navidad">
+                    <label for="fondo"><img class="fondos" src="img/smoke.jpg" alt=""></label>
+                    <input type="radio" name="fondo" value="smoke" onchange="cambiarFondo()">
 
-                    <label for="fondo"><img class="fondos" src="/img/playa.jpeg" alt=""></label>
-                    <input type="radio" name="fondo" value="playa">
+                    <label for="fondo"><img class="fondos" src="img/playa.jpeg" alt=""></label>
+                    <input type="radio" name="fondo" value="playa" onchange="cambiarFondo()">
                     <br><br>
+                    
 
-                    <input type="submit" value="Confirmar" id="boton-confirmar">
-                    <br>
+                    <div id="cont-boton">
+                        <input type="button" value="Confirmar" id="boton-confirmar" onclick="mostrarAlerta()">
+                    </div>
 
 
                 </form>
@@ -185,5 +198,6 @@
         </div>
     </footer>
 </body>
+<script src="js/giftcard.js"></script>
 
 </html>
