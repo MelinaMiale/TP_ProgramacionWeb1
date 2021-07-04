@@ -53,7 +53,7 @@
 
 .img-box div > h3 {
   padding: 5px;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 
 .img-box div > ul > li {
@@ -88,18 +88,18 @@
   padding: 15px;
 }
 .introduccion-al-curso h2 {
-  font-size: 50px;
+  font-size: 3.1em;
   margin-bottom: 20px;
 }
 
 .introduccion-al-curso p {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 
 .introduccion-al-curso div > h4 {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 
 .introduccion-al-curso div > ul {
@@ -135,12 +135,12 @@
 }
 
 .contenido-de-la-clase div > ol {
-  /*padding: 15px;*/
+  padding: 15px;
 }
 
 .contenido-de-la-clase div > ol > li {
   width: 60%;
-  font-size: 20px;
+  font-size: 1.2em;
   font-family: "Changa", sans-serif;
   list-style-position: inside;
   padding: 40px 10px 15px 15px;
@@ -253,7 +253,7 @@
 }
 
 .perfil h3 {
-  font-size: 20px;
+  font-size: 1em;
   font-family: "Changa", sans-serif;
   margin: 10px 10px 3px 10px;
   display: block;
@@ -266,7 +266,7 @@
 
 .perfil p {
   width: 80%;
-  font-size: 17px;
+  font-size: 0.85em;
   font-family: "Changa", sans-serif;
   text-align: justify;
   color: #4e6f06;
@@ -332,7 +332,7 @@
   position: absolute;
   bottom: 50px;
   right: 0px;
-  font-size: 18px;
+  font-size: 0.9em;
   border-top-style: groove;
   width: 100%;
 }
@@ -341,7 +341,7 @@
   position: absolute;
   bottom: 40px;
   left: 15px;
-  font-size: 15px;
+  font-size: 0.8em;
   display: inline-block;
   height: 30px;
 }
@@ -357,7 +357,7 @@
   background-repeat: no-repeat;
   background-position: right;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.7em;
   display: block;
   width: 50%;
 }
@@ -374,7 +374,7 @@
   width: fit-content;
   padding: 5px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.8em;
   position: absolute;
   bottom: 10px;
   left: 10px;

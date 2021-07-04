@@ -9,7 +9,7 @@
 
 h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.9em;
   margin: 50px;
 }
 
@@ -50,13 +50,13 @@ main {
 }
 
 .mapa h2 {
-  font-size: 20px;
+  font-size: 1em;
   padding-bottom: 10px;
   margin: auto;
 }
 
 .datos-empresa h2 {
-  font-size: 20px;
+  font-size: 1em;
   padding-bottom: 10px;
 }
 
@@ -104,7 +104,7 @@ form {
 .email-tel div > input {
   width: 80%;
   padding: 10px;
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .consulta > div {
@@ -118,7 +118,7 @@ form {
   align-self: stretch;
   flex-grow: 8;
   padding: 15px;
-  font-size: 20px;
+  font-size: 1em;
 }
 
 #info-consulta {
@@ -145,7 +145,7 @@ form {
   margin-top: 50px;
   cursor: pointer;
   color: white;
-  font-size: 20px;
+  font-size: 1em;
   opacity: 80%;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(158, 150, 158, 1);
   -moz-box-shadow: 10px 10px 5px 0px rgba(158, 150, 158, 1);
@@ -164,5 +164,5 @@ form {
   padding: 20px;
   width: 100%;
   color: crimson;
-  font-size: 20px;
+  font-size: 1em;
 }
