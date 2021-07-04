@@ -1,33 +1,33 @@
 .form-container{
-    padding: 30px;
+    padding: 2em;
     
 }
 
-.user-info-container{
+.datos1{
     display: flex;
-    flex-direction: row;
-    margin: 20px;
+    flex-direction: column;
+    margin: 1.5em;
     align-items: center;
-    padding: 10px;
+    padding: 0.8em;
     justify-content: center;
-    
 }
 
 .datos{
-    margin: 20px;
-    height: 40px;
-    width: 25%;
-    border-radius: 12px;
+    margin: 1.3em;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.8em;
     text-align: center;
     
 }
+ 
 
 .boton{
-    height: 40px;
-    width: 100px;
-    border-radius: 12px;
+    height: 2.7em;
+    width: 7em;
+    border-radius: 0.8em;
     background-color: #c2f554;
-    margin: 10px;
+    margin: 1em;
     cursor: pointer;
 }
 
@@ -37,16 +37,25 @@
 
 .boton-inscribirse{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    margin: 20px;
+    
+}
+
+#boton-inscribirse{
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    background-color: #c2f554;
+    margin: 10px;
+    cursor: pointer;
+    
 }
 
 .boton-agregar{
-    padding: 10px;
-    margin: 30px;
-    display: flex;
-    justify-content: left;
+    padding: 0.7em;
+    margin: auto;
+    text-align: center;
 }
 
 .boton-agregar:hover{
@@ -56,36 +65,151 @@
 
 
 main{
-    margin: 30px;
+    margin: 2em;
 }
 
 h1{
     text-align: center;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 1.7em;
+    padding: 0.6px;
 }
 
 h2{
     text-align: center;
+    font-size: 1.4em;
 
 }
 
 #precio{
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .contenedor-titulo{
     background-color: #c2f554;
-    width: 400px;
-    height: 100px;
+    width: 90%;
+    height: 6em;
     margin: auto;
     border-radius: 50%;
 }
 
 #titulo-curso{
     background-color: #4e6f06;
-    width: 200px;
+    width: 80%;
+    height: 2.6em;
     position: relative;
-    left: 100px;
+    margin: auto;
 }
 
+
+
+@media screen and (min-width:60em){
+    .form-container{
+        padding: 2em;
+        
+    }
+    
+    .datos1{
+        display: flex;
+        flex-direction: row;
+        margin: 1.5em;
+        align-items: center;
+        padding: 0.8em;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    #borrar{
+        font-size: 2em;
+    }
+
+    #agregar{
+        font-size: 2em;
+    }
+
+    .datos{
+        margin: 20px;
+        height: 40px;
+        width: 25%;
+        border-radius: 12px;
+        text-align: center;
+        
+    }
+    
+    .boton{
+        height: 40px;
+        width: 100px;
+        border-radius: 12px;
+        background-color: #c2f554;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+    .boton:hover{
+        color: #4e6f06;
+    }
+    
+    .boton-inscribirse{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    #boton-inscribirse{
+        height: 40px;
+        width: 100px;
+        border-radius: 12px;
+        background-color: #c2f554;
+        margin: 10px;
+        cursor: pointer;
+        
+    }
+    
+    .boton-agregar{
+        padding: 0.7em;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .boton-agregar:hover{
+        color: #4e6f06;
+    }
+    
+    
+    
+    main{
+        margin: 2em;
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 1.7em;
+        padding: 0.6px;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 1.4em;
+    
+    }
+    
+    #precio{
+        font-size: 2em;
+    }
+    
+    .contenedor-titulo{
+        background-color: #c2f554;
+        width: 30%;
+        height: 6em;
+        margin: auto;
+        border-radius: 50%;
+    }
+    
+    #titulo-curso{
+        background-color: #4e6f06;
+        width: 50%;
+        height: 2.6em;
+        position: relative;
+        margin: auto;
+    }
+}

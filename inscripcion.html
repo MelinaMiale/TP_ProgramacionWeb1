@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/inscripcion.css">
     <title>WeCode - Inscribite a todos nuestros cursos!</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/inscripcion.js"></script>
 </head>
 
 <body>
@@ -48,35 +50,37 @@
             <h2 id="titulo-curso">Programacion en Android</h2>
         </div>
 
-        <form class="form-container">
+        <form class="form-container" onsubmit="mensaje()">
 
+            <div class="user-info-container" >
+                <div class="datos1">
+                    <input class="datos" type="text" placeholder="Nombre"  required>
+                    <input class="datos" type="text" placeholder="Apellido"  required >
+                    <input class="datos" type="text" placeholder="DNI" name="DNI" required >
+                    <button type="button" class="borrar boton" >-</button> 
+                    <button type="button"class="agregar boton">+</button>
+                </div>
 
-            <div class="user-info-container">
-                <input class="datos" type="text" placeholder="Nombre" required>
-                <input class="datos" type="text" placeholder="Apellido" required>
-                <input class="datos" type="text" placeholder="DNI" required>
-                <button class="boton">Borrar</button>
+                <div class="datos1">
+                    <input class="datos" type="text" placeholder="Nombre" required>
+                    <input class="datos" type="text" placeholder="Apellido" required  >
+                    <input class="datos" type="text" placeholder="DNI" name="DNI" required >
+                    <button type="button" class="borrar boton" >-</button> 
+                    <button type="button" class="agregar boton" >+</button>
+                </div>
+                
+                <div class="datos1">
+                    <input class="datos" type="text" placeholder="Nombre" required>
+                    <input class="datos" type="text" placeholder="Apellido"  required>
+                    <input class="datos" type="text" placeholder="DNI" name="DNI"required>
+                    <button type="button" class="borrar boton" >-</button> 
+                    <button type="button" class="agregar boton">+</button>
+                </div>
+                        
             </div>
-
-            <div class="user-info-container">
-                <input class="datos" type="text" placeholder="Nombre" required>
-                <input class="datos" type="text" placeholder="Apellido" required>
-                <input class="datos" type="text" placeholder="DNI" required>
-                <button class="boton">Borrar</button>
-            </div>
-
-            <div class="user-info-container">
-                <input class="datos" type="text" placeholder="Nombre" required>
-                <input class="datos" type="text" placeholder="Apellido" required>
-                <input class="datos" type="text" placeholder="DNI" required>
-                <button class="boton">Borrar</button>
-            </div>
-
-            <div class="boton-agregar">
-                <button class="boton">Agregar Persona</button><br><br>
-            </div>
+            
             <div class="boton-inscribirse">
-                <label id="precio">$30000</label> <input class="boton" type="submit" value="Inscribirse">
+                <label id="precio">$30000</label> <input id="boton-inscribirse" type="submit" value="Inscribirse" > 
             </div>
         </form>
     </main>

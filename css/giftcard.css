@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
 .giftcard-img{
-    width: 80%;
+    max-width: 90%;
 }
 
 .article-giftcard{
@@ -7,66 +9,136 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width:100%;
+    font-family: 'Lato', sans-serif;
 }
 
 .section-container{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 1em;
 }
 
 .article-form{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     
 }
 
 .colors{
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
 }
 
+.h1{
+    text-align: center;
+}
+
 #px20{
-    font-size: 10px;
+    font-size: 0.8em;
 }
 
 #px28{
-    font-size: 12px;
+    font-size: 1em;
 }
 
 #px32{
-    font-size: 14px;
+    font-size: 1.2em;
 }
 
 #px48{
-    font-size: 16px;
+    font-size: 1.4em;
 }
 
 #px60{
-    font-size: 20px;
+    font-size: 1.6em;
+}
+
+/*giftcard previsualizacion*/
+
+#fondo{
+    width: 15em;
+    height: 10em;
+    border-radius: 10px;
+    background-image: url("/img/grey.jpg");
+    position: relative;
+}
+
+#cont-nombre{
+    width: 50%;
+    height: 2.5em;
+    margin: auto;
+}
+
+#nombre-destinatario{
+    width: 100%;
+    height: 2em;
+    padding-left: 1em;
+}
+
+#giftcard-logo{
+    height: 3em;
+    width: 20%;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    
+}
+
+#nombre-p{
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 0.5em;
+    
+}
+
+#cont-monto{
+    width: 100%;
+    margin: auto;
+}
+
+#p-monto{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0.2em;
+    display: none;
 }
 
 .ubicaciones{
-    width: 50px;
-    height: 40px;
+    width: 3em;
+    height: 2.5em;
 }
 
 .fondos{
-    height: 40px;
-    width: 50px;
+    height: 2.5em;
+    width: 3em;
+}
+
+.number-monto{
+    width: 78%;
+    height: 2em;
+}
+.label-monto{
+    width: 19%;
+}
+
+#cont-boton{
+    text-align: center;
 }
 
 #boton-confirmar{
     background-color: rgb(226, 55, 55);
     color: black;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 12px;
+    width: 80%;
+    height: 3em;
+    font-size: 1.3em;
+    border-radius: 0.8em;
+    
 }
 
 #boton-confirmar:hover{
@@ -74,7 +146,49 @@
     cursor: pointer;
 }
 
-#nombre-destinatario{
-    width: 95%;
-    height: 30px;
+
+
+@media screen and (min-width:47em) {
+    #boton-confirmar{
+        background-color: blue;
+    }
+
+    #fondo{
+        font-size: 170%;
+
+    }
+
+    
+}
+
+@media screen and (min-width:60em) {
+
+    #boton-confirmar{
+        background-color: yellow;
+    }
+
+    .section-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .article-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        
+}
+
+    .article-giftcard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+}
+
 }
