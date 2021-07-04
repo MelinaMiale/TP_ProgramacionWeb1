@@ -60,7 +60,7 @@ body {
     padding: 25px;
   }
   .slider-container {
-    width: 350%;
+    width: 150%;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -75,14 +75,18 @@ body {
     width: 100%;
   }
 
+  .slider-container img {
+    width: fit-content;
+  }
+
   .pasos-inscripcion {
-    width: 345%;
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     background-image: url(../img/slider-3.jpg);
     background-repeat: no-repeat;
-    background-size: 250px 100px;
+    background-size: 50px 50px;
     background-position: 10px;
     opacity: 80%;
     background-color: gray;
