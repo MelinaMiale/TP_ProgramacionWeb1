@@ -161,3 +161,89 @@ form {
   color: crimson;
   font-size: 1em;
 }
+
+@media screen and (max-width: 32em) {
+  h1 {
+    font-size: 1.9em;
+  }
+  body {
+    margin: 30px;
+  }
+  /* .datos-empresa {
+    height: 120px;
+    width: 100%;
+    background-size: 100px;
+  } */
+
+  .datos-empresa {
+    text-align: end;
+    align-self: flex-end;
+    background-color: rgb(114, 207, 114);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 150px;
+    width: 300px;
+    background-image: none;
+    margin: auto;
+    border-radius: 15px;
+  }
+
+  .datos-empresa p {
+    font-size: 0.8em;
+    padding-bottom: 5px;
+  }
+
+  form{
+  align-self: left;  
+}
+  .name-lastname,
+  .email-tel,
+  .consulta {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .name-lastname div,
+  .email-tel div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    margin-left: -30px;
+  }
+
+  .name-lastname div > label,
+  .email-tel div > label,
+  .consulta div > label{
+    width: 50%;
+    align-self: left;
+    margin: auto;
+    margin-left: 15px;
+  }
+
+  .name-lastname div > input,
+  .email-tel div > input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .consulta div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(143, 138, 138);
+    border-width: 5px;
+    border-style: groove;
+    border-radius: 5px;
+  }
+  /* .consulta div > label {
+    text-align: left;
+  } */
+  .mapa {
+    margin: auto;
+  }
+}
