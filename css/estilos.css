@@ -18,7 +18,6 @@ body {
   justify-content: space-between;
   height: 150px;
   margin: 1em;
-  
 }
 
 @media screen and (max-width: 60em) {
@@ -34,8 +33,7 @@ body {
   .shopping-cart {
     position: absolute;
     right: 3em;
-    top:2em ;
-    
+    top: 2em;
   }
 
   .header-container form {
@@ -43,7 +41,6 @@ body {
   }
 
   .logo {
-
     margin-right: 50px;
     width: 10%;
     border-radius: 50px 10px 50px 10px;
@@ -52,7 +49,6 @@ body {
     top: 0em;
   }
 
-  
   .menu-principal {
     padding: 50px;
     display: flex;
@@ -62,7 +58,7 @@ body {
   main {
     padding: 0;
   }
-  .slider-container {
+  /* .slider-container {
     width: 150%;
     display: inline-flex;
     flex-direction: column;
@@ -110,7 +106,7 @@ body {
     height: 50px;
     font-size: 2.96em;
 
-  }
+  } */
   .footer-container {
     background-color: rgb(143, 138, 138);
     padding: 2em;
@@ -122,11 +118,11 @@ body {
     margin-top: 2em;
   }
 
-  .integrantes > h4{
+  .integrantes > h4 {
     margin: auto;
   }
 
-  .oficinas > h4{
+  .oficinas > h4 {
     margin: auto;
   }
 
@@ -673,4 +669,179 @@ i {
   vertical-align: middle;
   text-align: center;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 30em) {
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fondos/fondo-claro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px;
+    width: 89%;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .slider-container article {
+    margin: 20px;
+  }
+
+  .pasos-inscripcion {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/slider-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 350px;
+    background-position: bottom left;
+    opacity: 80%;
+    background-color: gray;
+    align-items: flex-end;
+    height: 30em;
+  }
+
+  .pasos-inscripcion h2 {
+    align-self: center;
+    width: 100%;
+    text-align: right;
+    font-size: 2.37em;
+  }
+
+  .pasos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 55%;
+    height: 27em;
+    background-color: greenyellow;
+    position: relative;
+    border-radius: 80px 15px 15px 80px;
+    margin-bottom: 15px;
+  }
+
+  .pasos-container article {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    font-size: 1.56em;
+  }
+
+  .cursos-destacados {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
+  #cursos-destacados-titulo {
+    font-size: 2em;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    border-radius: 10px;
+    background-color: rgb(127, 166, 214);
+    margin: auto;
+    margin-bottom: 15px;
+    height: 200px;
+    padding: 50px;
+    -webkit-box-shadow: -7px -6px 9px -1px rgba(119, 112, 224, 1);
+    -moz-box-shadow: -7px -6px 9px -1px rgba(119, 112, 224, 1);
+    box-shadow: -7px -6px 9px -1px rgba(119, 112, 224, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 12em;
+  }
+  .medios-de-pago {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60em;
+    margin-top: 15px;
+  }
+
+  .medios-de-pago article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .medios-de-pago article > img {
+    border-radius: 20%;
+    width: 12em;
+    height: 130px;
+    margin: 35px;
+  }
+
+  .aside {
+    background-image: url(../img/fondos/aside-2.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80em;
+  }
+
+  .aside img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aside-item1,
+  .aside-item2,
+  .aside-item3 {
+    padding: 15px;
+    margin: 25px;
+    width: 60%;
+    height: 300px;
+    border-radius: 20px;
+    border-style: groove;
+  }
+
+  .aside-item1 {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    background-image: url(../img/noticias-infotechnology.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+
+  .aside-item2 {
+    position: absolute;
+    top: 560px;
+    left: 50px;
+    background-image: url(../img/noticias-lanacion.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+
+  .aside-item3 {
+    position: absolute;
+    top: 920px;
+    right: 10px;
+    background-image: url(../img/noticias-BBC-News-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
 }

@@ -450,7 +450,7 @@
   }
 
   .modulo li {
-    width: 700px;
+    width: 50em;
   }
   .modulo .reloj {
     width: 120px;
@@ -508,6 +508,6 @@
   .img-box {
     position: absolute;
     top: 42em;
-    left: 5em;
+    left: 2em;
   }
 }
