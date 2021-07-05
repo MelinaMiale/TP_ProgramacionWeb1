@@ -274,76 +274,6 @@
 }
 /* ---------------------------------------------------------------------------- */
 
-@media screen and (max-width: 32em) {
-  main {
-    margin: 0px;
-    padding: 0px;
-  }
-  .contenido-de-la-clase {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-  }
-  .contenido-de-la-clase h3 {
-    font-size: 15px;
-    margin: 5px;
-    display: inline-block;
-    font-family: "Changa", sans-serif;
-  }
-  .mostrar-detalle {
-    position: absolute;
-    left: 300px;
-    background-image: url(../img/down-arrows_icon-icons.com_70186.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    border-radius: 10%;
-    cursor: pointer;
-  }
-
-  .ocultar-detalle {
-    position: absolute;
-    left: 350px;
-    background-image: url(../img/up-arrows_icon-icons.com_69819.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    border-radius: 10%;
-    cursor: pointer;
-  }
-
-  .modulo li {
-    width: 700px;
-  }
-  .modulo .reloj {
-    width: 120px;
-  }
-  .docente {
-    width: 200%;
-  }
-
-  .cursos-populares {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 450px;
-    margin-bottom: 450px;
-    height: 900px;
-    background-image: none;
-    background-size: cover;
-    border-bottom-style: double;
-    border-top-style: double;
-  }
-  .curso-populares-item1,
-  .curso-populares-item2,
-  .curso-populares-item5,
-  .curso-populares-item3 {
-    font-size: 0.1em;
-  }
-}
-
 .cursos-populares {
   display: flex;
   flex-direction: row;
@@ -477,4 +407,107 @@
   -webkit-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 30em) {
+  main {
+    margin: 0px;
+    padding: 0px;
+  }
+  .contenido-de-la-clase {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .contenido-de-la-clase h3 {
+    font-size: 15px;
+    margin: 5px;
+    display: inline-block;
+    font-family: "Changa", sans-serif;
+  }
+  .mostrar-detalle {
+    position: absolute;
+    left: 300px;
+    background-image: url(../img/down-arrows_icon-icons.com_70186.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+
+  .ocultar-detalle {
+    position: absolute;
+    left: 350px;
+    background-image: url(../img/up-arrows_icon-icons.com_69819.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+
+  .modulo li {
+    width: 700px;
+  }
+  .modulo .reloj {
+    width: 120px;
+  }
+  .docente {
+    width: 100%;
+    height: 37em;
+    display: flex;
+    flex-direction: column;
+  }
+  .docente img {
+    margin: auto;
+    border-radius: 50%;
+    width: 170px;
+  }
+  .foto {
+    background-image: url(../img/ranking.svg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 225px;
+    margin-left: 150px;
+  }
+
+  .perfil {
+    width: 100%;
+  }
+
+  .cursos-populares {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 900px;
+    border-bottom-style: double;
+    border-top-style: double;
+    background-image: url(../img/fondos/fondo-claro.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .curso-populares-item1,
+  .curso-populares-item2,
+  .curso-populares-item5,
+  .curso-populares-item3 {
+    font-size: 1em;
+  }
+
+  .detalle-curso-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70em;
+  }
+
+  .img-box {
+    position: absolute;
+    top: 42em;
+    left: 5em;
+  }
 }
