@@ -10,6 +10,7 @@
     <title>WeCode - Inscribite a todos nuestros cursos!</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/inscripcion.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -29,9 +30,13 @@
         <div class="shopping-cart">
             <a href="#">
                 <img src="img/shopping-cart.png" alt="shopping-cart">
-                <span id="shopping-cart-number">0</span>
+                <span id="shopping-cart-number">
+                    <script>document.write(cursosEnCarrito)</script>
+                </span>
             </a>
+            <input id="vaciar" type="button" value="vaciar" onclick="vaciar()">
         </div>
+        
     </header>
     <nav>
         <ul class="menu-principal">

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/giftcard.css">
+    <script src="js/index.js"></script>
     
     <title>WeCODE - Giftcard</title>
 </head>
@@ -19,7 +20,7 @@
             <datalist id="listado_cursos">
                 <option value="Android"></option>
                 <option value="Python"></option>
-                <option value="Mongo DB"></option>30px;
+                <option value="Mongo DB"></option>
                 <option value="Diseño Web"></option>
                 <option value="Seguridad Informática"></option>
                 <option value=".Net"></option>
@@ -29,15 +30,19 @@
         <div class="shopping-cart">
             <a href="#">
                 <img src="img/shopping-cart.png" alt="shopping-cart">
-                <span id="shopping-cart-number">0</span>
+                <span id="shopping-cart-number">
+                    <script>document.write(cursosEnCarrito)</script>
+                </span>
             </a>
+            <input id="vaciar" type="button" value="vaciar" onclick="vaciar()">
         </div>
+        
     </header>
     <nav>
         <ul class="menu-principal">
             <li><a href="index.html">Inicio</a> </li>
             <li><a href="detalle-de-curso.html">Cursos</a></li>
-            <li><a href="">Eventos</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
             <li><a href="giftcard.html">Giftcard</a></li>
             <li><a href="inscripcion.html">Inscripciones</a></li>
             <li><a href="contacto.html">Contacto</a></li>

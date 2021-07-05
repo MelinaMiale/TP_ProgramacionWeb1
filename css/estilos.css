@@ -17,32 +17,39 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  margin: 20px;
+  margin: 1em;
+  
 }
 
 @media screen and (max-width: 60em) {
   .header-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 160%;
+    width: 100%;
+    position: relative;
+    height: 15em;
   }
 
   .shopping-cart {
-    position: relative;
-    left: 80px;
-    bottom: 100px;
+    position: absolute;
+    right: 3em;
+    top:2em ;
+    
   }
 
   .header-container form {
-    margin-right: 50px;
+    margin-right: 0;
   }
 
   .logo {
-    margin-top: 1px;
-    margin-left: 5px;
+
     margin-right: 50px;
     width: 10%;
     border-radius: 50px 10px 50px 10px;
+    position: absolute;
+    left: 0em;
+    top: 0em;
   }
 
   
@@ -53,7 +60,7 @@ body {
     margin: auto;
   }
   main {
-    padding: 25px;
+    padding: 0;
   }
   .slider-container {
     width: 150%;
@@ -102,22 +109,52 @@ body {
     text-align: center;
     height: 50px;
     font-size: 2.96em;
+
+  }
+  .footer-container {
+    background-color: rgb(143, 138, 138);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 30em;
+    margin-top: 2em;
+  }
+
+  .integrantes > h4{
+    margin: auto;
+  }
+
+  .oficinas > h4{
+    margin: auto;
+  }
+
+  .header-container form > input {
+    display: inline-block;
+    width: 28em;
+    height: 2.5em;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.8em;
+    position: relative;
+    right: 1em;
   }
 }
 
 .header-container form > input {
   display: inline-block;
-  width: 500px;
-  height: 40px;
+  width: 28em;
+  height: 2.5em;
   border-radius: 12px;
   text-align: center;
   font-size: 0.8em;
 }
 
 .logo {
-  margin-top: 5px;
-  margin-left: 45px;
-  width: 170px;
+  margin-top: 0.3em;
+  margin-left: 1em;
+  width: 11em;
   border-radius: 50px 10px 50px 10px;
 }
 
@@ -156,6 +193,9 @@ body {
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
+  position: absolute;
+  top: 7em;
+  right: 2.4em;
 }
 
 .menu-principal {
@@ -183,10 +223,9 @@ body {
 
 .footer-container {
   background-color: rgb(143, 138, 138);
-  padding: 30px;
+  padding: 2em;
   display: flex;
   justify-content: space-between;
-  height: 160px;
   position: relative;
 }
 
@@ -194,12 +233,12 @@ body {
   background-image: url(../img/flechas-arriba.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30px;
-  height: 30px;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   position: absolute;
   top: 0px;
-  right: 5px;
+  right: 0.3em;
 }
 
 .integrantes {
@@ -212,21 +251,21 @@ body {
 .contacto h4 {
   text-align: center;
   font-size: 0.8em;
-  font-weight: 5px;
-  padding: 5px;
+  font-weight: 0.3em;
+  padding: 0.3em;
   border-style: groove;
-  border-radius: 15px;
-  margin-bottom: 15px;
-  width: 300px;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  width: 18em;
 }
 
 .integrantes ul > li {
   font-size: 0.75em;
   list-style: none;
-  padding: 5px 5px 5px 5px;
+  padding: 0.3em 0.3em 0.3em 0.3em;
   text-shadow: -4px -1px 2px rgba(103, 40, 191, 0.75);
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.3em;
 }
 
 .contacto {
@@ -237,40 +276,40 @@ body {
 }
 
 .contacto a {
-  margin: 10px;
+  margin: 0.7em;
 }
 .contacto a > img {
-  width: 50px;
+  width: 3em;
 }
 
 .oficinas {
   display: flex;
   flex-direction: column;
-  margin: 0px 35px 0px 35px;
+  margin: 0px 2em 0px 2em;
   position: relative;
 }
 
 .oficinas span {
   background-image: url(../img/icono-mapa.svg);
   background-repeat: no-repeat;
-  background-position: center right 20px;
-  background-size: 10px;
-  padding: 5px 5px 5px 5px;
+  background-position: center right 1.3em;
+  background-size: 0.8;
+  padding: 0.3em 0.3em 0.3em 0.3em;
   border-style: groove;
-  border-radius: 15px;
+  border-radius: 1em;
   font-size: 0.7em;
 }
 
 .oficinas-content {
   display: none;
   position: absolute;
-  left: 300px;
-  bottom: 160px;
+  left: 18em;
+  bottom: 10em;
   background-color: #a0b6aa;
-  border-radius: 10px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 10px 13px;
+  border-radius: 0.8em;
+  min-width: 10em;
+  box-shadow: 0px 0.5em 1em 0px rgba(0, 0, 0, 0.2);
+  padding: 0.8em 0.9em;
   z-index: 1;
 }
 
