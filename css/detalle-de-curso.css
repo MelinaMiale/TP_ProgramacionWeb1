@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
 
 .detalle-curso-container {
-  /* background-color: black; */
   background-image: url(../img/fondos/fondo-matrix.jpg);
   background-size: cover;
   background-position: top;
@@ -274,6 +273,76 @@
   margin: auto;
 }
 /* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 32em) {
+  main {
+    margin: 0px;
+    padding: 0px;
+  }
+  .contenido-de-la-clase {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .contenido-de-la-clase h3 {
+    font-size: 15px;
+    margin: 5px;
+    display: inline-block;
+    font-family: "Changa", sans-serif;
+  }
+  .mostrar-detalle {
+    position: absolute;
+    left: 300px;
+    background-image: url(../img/down-arrows_icon-icons.com_70186.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+
+  .ocultar-detalle {
+    position: absolute;
+    left: 350px;
+    background-image: url(../img/up-arrows_icon-icons.com_69819.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+
+  .modulo li {
+    width: 700px;
+  }
+  .modulo .reloj {
+    width: 120px;
+  }
+  .docente {
+    width: 200%;
+  }
+
+  .cursos-populares {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 450px;
+    margin-bottom: 450px;
+    height: 900px;
+    background-image: none;
+    background-size: cover;
+    border-bottom-style: double;
+    border-top-style: double;
+  }
+  .curso-populares-item1,
+  .curso-populares-item2,
+  .curso-populares-item5,
+  .curso-populares-item3 {
+    font-size: 0.1em;
+  }
+}
 
 .cursos-populares {
   display: flex;
